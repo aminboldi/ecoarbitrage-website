@@ -1,0 +1,25 @@
+# Version control
+.git/
+.gitignore
+
+# Node dependencies (reinstalled inside Docker)
+node_modules/
+**/node_modules/
+
+# Build outputs (rebuilt inside Docker)
+artifacts/ecoarbitrage-site/dist/
+artifacts/api-server/dist/
+artifacts/mockup-sandbox/dist/
+
+# Replit-specific
+.replit
+.local/
+.agents/
+replit.md
+
+# Uploaded / generated assets not needed for build
+# (logo.png is already in artifacts/ecoarbitrage-site/public/)
+attached_assets/
+
+# Logs
+*.log
