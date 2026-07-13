@@ -1,0 +1,130 @@
+2026-Jul-13 17:14:26.972987 Docker 27.5.1 with BuildKit and Buildx detected on deployment server (localhost).
+2026-Jul-13 17:14:26.979870 Starting deployment of aminboldi/ecoarbitrage-website:main to localhost.
+2026-Jul-13 17:14:27.280081 Preparing container with helper image: ghcr.io/coollabsio/coolify-helper:1.0.14
+2026-Jul-13 17:14:28.577206 ----------------------------------------
+2026-Jul-13 17:14:28.585160 Importing aminboldi/ecoarbitrage-website:main (commit sha f1f0ac800521f3054a039e88a887425137584b81) to /artifacts/r4nxfn02amzu2b2u13w8rjsg.
+2026-Jul-13 17:14:30.681144 Image not found (kvemsaona9aceoexxh3b7yj8:f1f0ac800521f3054a039e88a887425137584b81). Building new image.
+2026-Jul-13 17:14:32.029053 ----------------------------------------
+2026-Jul-13 17:14:32.034449 Building docker image started.
+2026-Jul-13 17:14:32.040325 To check the current progress, click on Show Debug Logs.
+2026-Jul-13 17:14:37.343920 ========================================
+2026-Jul-13 17:14:37.350279 Deployment failed: Command execution failed (exit code 1): docker exec r4nxfn02amzu2b2u13w8rjsg bash -c 'bash /artifacts/build.sh'
+2026-Jul-13 17:14:37.350279 Error: #0 building with "default" instance using docker driver
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #1 [internal] load build definition from Dockerfile
+2026-Jul-13 17:14:37.350279 #1 DONE 0.0s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #1 [internal] load build definition from Dockerfile
+2026-Jul-13 17:14:37.350279 #1 transferring dockerfile: 2.19kB done
+2026-Jul-13 17:14:37.350279 #1 DONE 0.0s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #2 [internal] load metadata for docker.io/library/node:22-alpine
+2026-Jul-13 17:14:37.350279 #2 DONE 1.2s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #3 [internal] load metadata for docker.io/library/nginx:1.27-alpine
+2026-Jul-13 17:14:37.350279 #3 DONE 1.4s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #4 [internal] load .dockerignore
+2026-Jul-13 17:14:37.350279 #4 transferring context: 490B done
+2026-Jul-13 17:14:37.350279 #4 DONE 0.0s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #5 [builder 1/11] FROM docker.io/library/node:22-alpine@sha256:16e22a550f3863206a3f701448c45f7912c6896a62de43add43bb9c86130c3e2
+2026-Jul-13 17:14:37.350279 #5 resolve docker.io/library/node:22-alpine@sha256:16e22a550f3863206a3f701448c45f7912c6896a62de43add43bb9c86130c3e2 0.0s done
+2026-Jul-13 17:14:37.350279 #5 sha256:16e22a550f3863206a3f701448c45f7912c6896a62de43add43bb9c86130c3e2 6.41kB / 6.41kB done
+2026-Jul-13 17:14:37.350279 #5 sha256:b74031e546d7f4faf561d797ac1b76beccac856a042815ca77db4fd047581605 1.72kB / 1.72kB done
+2026-Jul-13 17:14:37.350279 #5 sha256:bd168dc5d9d77ba5687dc7a31cc0f507c35b66c1d6af5f910154d3881df7c0ee 6.52kB / 6.52kB done
+2026-Jul-13 17:14:37.350279 #5 DONE 0.1s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #6 [stage-1 1/5] FROM docker.io/library/nginx:1.27-alpine@sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10
+2026-Jul-13 17:14:37.350279 #6 resolve docker.io/library/nginx:1.27-alpine@sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10 0.0s done
+2026-Jul-13 17:14:37.350279 #6 ...
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #7 [internal] load build context
+2026-Jul-13 17:14:37.350279 #7 transferring context: 1.43MB 0.1s done
+2026-Jul-13 17:14:37.350279 #7 DONE 0.1s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #6 [stage-1 1/5] FROM docker.io/library/nginx:1.27-alpine@sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10
+2026-Jul-13 17:14:37.350279 #6 sha256:b464cfdf2a6319875aeb27359ec549790ce14d8214fcb16ef915e4530e5ed235 0B / 629B 0.1s
+2026-Jul-13 17:14:37.350279 #6 sha256:6769dc3a703c719c1d2756bda113659be28ae16cf0da58dd5fd823d6b9a050ea 10.79kB / 10.79kB done
+2026-Jul-13 17:14:37.350279 #6 sha256:62223d644fa234c3a1cc785ee14242ec47a77364226f1c811d2f669f96dc2ac8 2.50kB / 2.50kB done
+2026-Jul-13 17:14:37.350279 #6 sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870 0B / 3.64MB 0.1s
+2026-Jul-13 17:14:37.350279 #6 sha256:61ca4f733c802afd9e05a32f0de0361b6d713b8b53292dc15fb093229f648674 0B / 1.79MB 0.1s
+2026-Jul-13 17:14:37.350279 #6 sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10 10.33kB / 10.33kB done
+2026-Jul-13 17:14:37.350279 #6 extracting sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870
+2026-Jul-13 17:14:37.350279 #6 sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870 3.64MB / 3.64MB 0.2s done
+2026-Jul-13 17:14:37.350279 #6 sha256:d7e5070240863957ebb0b5a44a5729963c3462666baa2947d00628cb5f2d5773 0B / 955B 0.2s
+2026-Jul-13 17:14:37.350279 #6 sha256:b464cfdf2a6319875aeb27359ec549790ce14d8214fcb16ef915e4530e5ed235 629B / 629B 0.4s done
+2026-Jul-13 17:14:37.350279 #6 sha256:61ca4f733c802afd9e05a32f0de0361b6d713b8b53292dc15fb093229f648674 1.79MB / 1.79MB 0.3s done
+2026-Jul-13 17:14:37.350279 #6 extracting sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870 0.1s done
+2026-Jul-13 17:14:37.350279 #6 sha256:d7e5070240863957ebb0b5a44a5729963c3462666baa2947d00628cb5f2d5773 955B / 955B 0.4s done
+2026-Jul-13 17:14:37.350279 #6 sha256:81bd8ed7ec6789b0cb7f1b47ee731c522f6dba83201ec73cd6bca1350f582948 0B / 402B 0.4s
+2026-Jul-13 17:14:37.350279 #6 extracting sha256:61ca4f733c802afd9e05a32f0de0361b6d713b8b53292dc15fb093229f648674
+2026-Jul-13 17:14:37.350279 #6 sha256:34a64644b756511a2e217f0508e11d1a572085d66cd6dc9a555a082ad49a3102 0B / 1.40kB 0.4s
+2026-Jul-13 17:14:37.350279 #6 sha256:197eb75867ef4fcecd4724f17b0972ab0489436860a594a9445f8eaff8155053 0B / 1.21kB 0.4s
+2026-Jul-13 17:14:37.350279 #6 sha256:81bd8ed7ec6789b0cb7f1b47ee731c522f6dba83201ec73cd6bca1350f582948 402B / 402B 0.4s done
+2026-Jul-13 17:14:37.350279 #6 extracting sha256:61ca4f733c802afd9e05a32f0de0361b6d713b8b53292dc15fb093229f648674 0.1s done
+2026-Jul-13 17:14:37.350279 #6 sha256:34a64644b756511a2e217f0508e11d1a572085d66cd6dc9a555a082ad49a3102 1.40kB / 1.40kB 0.5s done
+2026-Jul-13 17:14:37.350279 #6 sha256:197eb75867ef4fcecd4724f17b0972ab0489436860a594a9445f8eaff8155053 1.21kB / 1.21kB 0.5s done
+2026-Jul-13 17:14:37.350279 #6 sha256:39c2ddfd6010082a4a646e7ca44e95aca9bf3eaebc00f17f7ccc2954004f2a7d 6.29MB / 15.52MB 0.6s
+2026-Jul-13 17:14:37.350279 #6 sha256:39c2ddfd6010082a4a646e7ca44e95aca9bf3eaebc00f17f7ccc2954004f2a7d 15.52MB / 15.52MB 0.7s done
+2026-Jul-13 17:14:37.350279 #6 extracting sha256:b464cfdf2a6319875aeb27359ec549790ce14d8214fcb16ef915e4530e5ed235 done
+2026-Jul-13 17:14:37.350279 #6 extracting sha256:d7e5070240863957ebb0b5a44a5729963c3462666baa2947d00628cb5f2d5773 done
+2026-Jul-13 17:14:37.350279 #6 extracting sha256:81bd8ed7ec6789b0cb7f1b47ee731c522f6dba83201ec73cd6bca1350f582948 done
+2026-Jul-13 17:14:37.350279 #6 extracting sha256:197eb75867ef4fcecd4724f17b0972ab0489436860a594a9445f8eaff8155053 done
+2026-Jul-13 17:14:37.350279 #6 extracting sha256:34a64644b756511a2e217f0508e11d1a572085d66cd6dc9a555a082ad49a3102
+2026-Jul-13 17:14:37.350279 #6 extracting sha256:34a64644b756511a2e217f0508e11d1a572085d66cd6dc9a555a082ad49a3102 done
+2026-Jul-13 17:14:37.350279 #6 extracting sha256:39c2ddfd6010082a4a646e7ca44e95aca9bf3eaebc00f17f7ccc2954004f2a7d 0.1s
+2026-Jul-13 17:14:37.350279 #6 extracting sha256:39c2ddfd6010082a4a646e7ca44e95aca9bf3eaebc00f17f7ccc2954004f2a7d 0.5s done
+2026-Jul-13 17:14:37.350279 #6 DONE 1.3s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #8 [builder 2/11] RUN corepack enable && corepack prepare pnpm@9 --activate
+2026-Jul-13 17:14:37.350279 #8 0.845 Preparing pnpm@9 for immediate activation...
+2026-Jul-13 17:14:37.350279 #8 DONE 2.0s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #9 [builder 3/11] WORKDIR /app
+2026-Jul-13 17:14:37.350279 #9 DONE 0.0s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #10 [builder 4/11] COPY package.json pnpm-workspace.yaml pnpm-lock.yaml ./
+2026-Jul-13 17:14:37.350279 #10 DONE 0.0s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #11 [builder 5/11] COPY tsconfig*.json ./
+2026-Jul-13 17:14:37.350279 #11 DONE 0.0s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #12 [builder 6/11] COPY lib/ ./lib/
+2026-Jul-13 17:14:37.350279 #12 DONE 0.0s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #13 [builder 7/11] COPY artifacts/ecoarbitrage-site/ ./artifacts/ecoarbitrage-site/
+2026-Jul-13 17:14:37.350279 #13 DONE 0.0s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #14 [builder 8/11] COPY artifacts/api-server/package.json ./artifacts/api-server/package.json
+2026-Jul-13 17:14:37.350279 #14 DONE 0.0s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #15 [builder 9/11] COPY artifacts/mockup-sandbox/package.json ./artifacts/mockup-sandbox/package.json
+2026-Jul-13 17:14:37.350279 #15 DONE 0.0s
+2026-Jul-13 17:14:37.350279
+2026-Jul-13 17:14:37.350279 #16 [builder 10/11] RUN pnpm install --frozen-lockfile
+2026-Jul-13 17:14:37.350279 #16 0.801 Scope: all 8 workspace projects
+2026-Jul-13 17:14:37.350279 #16 0.938 ERR_PNPM_LOCKFILE_CONFIG_MISMATCH Cannot proceed with the frozen installation. The current "overrides" configuration doesn't match the value found in the lockfile
+2026-Jul-13 17:14:37.350279 #16 0.938
+2026-Jul-13 17:14:37.350279 #16 0.938 Update your lockfile using "pnpm install --no-frozen-lockfile"
+2026-Jul-13 17:14:37.350279 #16 ERROR: process "/bin/sh -c pnpm install --frozen-lockfile" did not complete successfully: exit code: 1
+2026-Jul-13 17:14:37.350279 ------
+2026-Jul-13 17:14:37.350279 > [builder 10/11] RUN pnpm install --frozen-lockfile:
+2026-Jul-13 17:14:37.350279 0.801 Scope: all 8 workspace projects
+2026-Jul-13 17:14:37.350279 0.938 ERR_PNPM_LOCKFILE_CONFIG_MISMATCH Cannot proceed with the frozen installation. The current "overrides" configuration doesn't match the value found in the lockfile
+2026-Jul-13 17:14:37.350279 0.938
+2026-Jul-13 17:14:37.350279 0.938 Update your lockfile using "pnpm install --no-frozen-lockfile"
+2026-Jul-13 17:14:37.350279 ------
+2026-Jul-13 17:14:37.350279 Dockerfile:23
+2026-Jul-13 17:14:37.350279 --------------------
+2026-Jul-13 17:14:37.350279 21 | COPY artifacts/mockup-sandbox/package.json ./artifacts/mockup-sandbox/package.json
+2026-Jul-13 17:14:37.350279 22 |
+2026-Jul-13 17:14:37.350279 23 | >>> RUN pnpm install --frozen-lockfile
+2026-Jul-13 17:14:37.350279 24 |
+2026-Jul-13 17:14:37.350279 25 | # Vite requires PORT and BASE_PATH at build time
+2026-Jul-13 17:14:37.350279 --------------------
+2026-Jul-13 17:14:37.350279 ERROR: failed to build: failed to solve: process "/bin/sh -c pnpm install --frozen-lockfile" did not complete successfully: exit code: 1
+2026-Jul-13 17:14:37.350279 exit status 1
+2026-Jul-13 17:14:37.419168 ========================================
+2026-Jul-13 17:14:37.425409 Deployment failed. Removing the new version of your application.
+2026-Jul-13 17:14:37.888548 Gracefully shutting down build container: r4nxfn02amzu2b2u13w8rjsg
