@@ -5,6 +5,6 @@ set -e
 # $variables ($host, $uri, etc.) untouched.
 envsubst '$API_URL' \
   < /etc/nginx/templates/default.conf.template \
-  > /etc/nginx/conf.d/default.conf
+  > /etc/nginx/http.d/default.conf
 
 exec "$@"
