@@ -1,0 +1,174 @@
+2026-Jul-13 17:16:53.787087 Docker 27.5.1 with BuildKit and Buildx detected on deployment server (localhost).
+2026-Jul-13 17:16:53.793419 Starting deployment of aminboldi/ecoarbitrage-website:main to localhost.
+2026-Jul-13 17:16:54.072289 Preparing container with helper image: ghcr.io/coollabsio/coolify-helper:1.0.14
+2026-Jul-13 17:16:55.181986 ----------------------------------------
+2026-Jul-13 17:16:55.187627 Importing aminboldi/ecoarbitrage-website:main (commit sha 03573843254f913fff7bdd64978cfd7567b83813) to /artifacts/km6sfk8bp1mx1670wg2e3mpt.
+2026-Jul-13 17:16:57.275721 Image not found (kvemsaona9aceoexxh3b7yj8:03573843254f913fff7bdd64978cfd7567b83813). Building new image.
+2026-Jul-13 17:16:58.757477 ----------------------------------------
+2026-Jul-13 17:16:58.764405 Building docker image started.
+2026-Jul-13 17:16:58.769783 To check the current progress, click on Show Debug Logs.
+2026-Jul-13 17:17:14.394107 ========================================
+2026-Jul-13 17:17:14.400476 Deployment failed: Command execution failed (exit code 1): docker exec km6sfk8bp1mx1670wg2e3mpt bash -c 'bash /artifacts/build.sh'
+2026-Jul-13 17:17:14.400476 Error: #0 building with "default" instance using docker driver
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #1 [internal] load build definition from Dockerfile
+2026-Jul-13 17:17:14.400476 #1 transferring dockerfile: 2.19kB done
+2026-Jul-13 17:17:14.400476 #1 DONE 0.0s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #2 [internal] load metadata for docker.io/library/node:22-alpine
+2026-Jul-13 17:17:14.400476 #2 ...
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #3 [internal] load metadata for docker.io/library/nginx:1.27-alpine
+2026-Jul-13 17:17:14.400476 #3 DONE 0.4s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #2 [internal] load metadata for docker.io/library/node:22-alpine
+2026-Jul-13 17:17:14.400476 #2 DONE 0.4s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #4 [internal] load .dockerignore
+2026-Jul-13 17:17:14.400476 #4 transferring context: 490B done
+2026-Jul-13 17:17:14.400476 #4 DONE 0.0s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #5 [stage-1 1/5] FROM docker.io/library/nginx:1.27-alpine@sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10
+2026-Jul-13 17:17:14.400476 #5 CACHED
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #6 [builder 1/11] FROM docker.io/library/node:22-alpine@sha256:16e22a550f3863206a3f701448c45f7912c6896a62de43add43bb9c86130c3e2
+2026-Jul-13 17:17:14.400476 #6 CACHED
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #7 [internal] load build context
+2026-Jul-13 17:17:14.400476 #7 transferring context: 1.43MB 0.1s done
+2026-Jul-13 17:17:14.400476 #7 DONE 0.1s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #8 [builder 2/11] RUN corepack enable && corepack prepare pnpm@10 --activate
+2026-Jul-13 17:17:14.400476 #8 0.873 Preparing pnpm@10 for immediate activation...
+2026-Jul-13 17:17:14.400476 #8 DONE 2.4s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #9 [builder 3/11] WORKDIR /app
+2026-Jul-13 17:17:14.400476 #9 DONE 0.0s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #10 [builder 4/11] COPY package.json pnpm-workspace.yaml pnpm-lock.yaml ./
+2026-Jul-13 17:17:14.400476 #10 DONE 0.0s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #11 [builder 5/11] COPY tsconfig*.json ./
+2026-Jul-13 17:17:14.400476 #11 DONE 0.0s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #12 [builder 6/11] COPY lib/ ./lib/
+2026-Jul-13 17:17:14.400476 #12 DONE 0.0s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #13 [builder 7/11] COPY artifacts/ecoarbitrage-site/ ./artifacts/ecoarbitrage-site/
+2026-Jul-13 17:17:14.400476 #13 DONE 0.0s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #14 [builder 8/11] COPY artifacts/api-server/package.json ./artifacts/api-server/package.json
+2026-Jul-13 17:17:14.400476 #14 DONE 0.0s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #15 [builder 9/11] COPY artifacts/mockup-sandbox/package.json ./artifacts/mockup-sandbox/package.json
+2026-Jul-13 17:17:14.400476 #15 DONE 0.0s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #16 [builder 10/11] RUN pnpm install --frozen-lockfile
+2026-Jul-13 17:17:14.400476 #16 0.753 Scope: all 8 workspace projects
+2026-Jul-13 17:17:14.400476 #16 0.934 Lockfile is up to date, resolution step is skipped
+2026-Jul-13 17:17:14.400476 #16 1.076 Progress: resolved 1, reused 0, downloaded 0, added 0
+2026-Jul-13 17:17:14.400476 #16 1.195 Packages: +475
+2026-Jul-13 17:17:14.400476 #16 1.195 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2026-Jul-13 17:17:14.400476 #16 1.456
+2026-Jul-13 17:17:14.400476 #16 1.456 ╭───────────────────────────────────────────────╮
+2026-Jul-13 17:17:14.400476 #16 1.456 │ │
+2026-Jul-13 17:17:14.400476 #16 1.456 │ Update available! 10.34.5 → 11.12.0. │
+2026-Jul-13 17:17:14.400476 #16 1.456 │ Changelog: https://pnpm.io/v/11.12.0 │
+2026-Jul-13 17:17:14.400476 #16 1.456 │ To update, run:<REDACTED>@11.12.0 │
+2026-Jul-13 17:17:14.400476 #16 1.456 │ │
+2026-Jul-13 17:17:14.400476 #16 1.456 ╰───────────────────────────────────────────────╯
+2026-Jul-13 17:17:14.400476 #16 1.456
+2026-Jul-13 17:17:14.400476 #16 2.085 Progress: resolved 475, reused 0, downloaded 18, added 4
+2026-Jul-13 17:17:14.400476 #16 3.086 Progress: resolved 475, reused 0, downloaded 123, added 100
+2026-Jul-13 17:17:14.400476 #16 4.086 Progress: resolved 475, reused 0, downloaded 160, added 109
+2026-Jul-13 17:17:14.400476 #16 5.087 Progress: resolved 475, reused 0, downloaded 167, added 113
+2026-Jul-13 17:17:14.400476 #16 6.087 Progress: resolved 475, reused 0, downloaded 174, added 113
+2026-Jul-13 17:17:14.400476 #16 7.088 Progress: resolved 475, reused 0, downloaded 241, added 137
+2026-Jul-13 17:17:14.400476 #16 8.088 Progress: resolved 475, reused 0, downloaded 325, added 169
+2026-Jul-13 17:17:14.400476 #16 9.088 Progress: resolved 475, reused 0, downloaded 426, added 233
+2026-Jul-13 17:17:14.400476 #16 9.803 Progress: resolved 475, reused 0, downloaded 475, added 475, done
+2026-Jul-13 17:17:14.400476 #16 10.07 .../esbuild@0.27.3/node_modules/esbuild postinstall$ node install.js
+2026-Jul-13 17:17:14.400476 #16 10.15 .../esbuild@0.27.3/node_modules/esbuild postinstall: Done
+2026-Jul-13 17:17:14.400476 #16 10.46
+2026-Jul-13 17:17:14.400476 #16 10.46 dependencies:
+2026-Jul-13 17:17:14.400476 #16 10.46 + @replit/connectors-sdk 0.4.1
+2026-Jul-13 17:17:14.400476 #16 10.46
+2026-Jul-13 17:17:14.400476 #16 10.46 devDependencies:
+2026-Jul-13 17:17:14.400476 #16 10.46 + prettier 3.9.4
+2026-Jul-13 17:17:14.400476 #16 10.46 + typescript 5.9.3
+2026-Jul-13 17:17:14.400476 #16 10.46
+2026-Jul-13 17:17:14.400476 #16 10.50 . preinstall$ sh -c 'rm -f package-lock.json yarn.lock; case "$npm_config_user_agent" in pnpm/*) ;; *) echo "Use pnpm instead" >&2; exit 1 ;; esac'
+2026-Jul-13 17:17:14.400476 #16 10.51 . preinstall: Done
+2026-Jul-13 17:17:14.400476 #16 10.71 Done in 10.5s using pnpm v10.34.5
+2026-Jul-13 17:17:14.400476 #16 DONE 11.0s
+2026-Jul-13 17:17:14.400476
+2026-Jul-13 17:17:14.400476 #17 [builder 11/11] RUN pnpm --filter @workspace/ecoarbitrage-site run build
+2026-Jul-13 17:17:14.400476 #17 0.665
+2026-Jul-13 17:17:14.400476 #17 0.665 > @workspace/ecoarbitrage-site@0.0.0 build /app/artifacts/ecoarbitrage-site
+2026-Jul-13 17:17:14.400476 #17 0.665 > vite build --config vite.config.ts
+2026-Jul-13 17:17:14.400476 #17 0.665
+2026-Jul-13 17:17:14.400476 #17 0.853 /app/node_modules/.pnpm/rollup@4.62.2/node_modules/rollup/dist/native.js:121
+2026-Jul-13 17:17:14.400476 #17 0.853 throw new Error(
+2026-Jul-13 17:17:14.400476 #17 0.853 ^
+2026-Jul-13 17:17:14.400476 #17 0.853
+2026-Jul-13 17:17:14.400476 #17 0.853 Error: Cannot find module @rollup/rollup-linux-x64-musl. npm has a bug related to optional dependencies (https://github.com/npm/cli/issues/4828). Please try `npm i` again after removing both package-lock.json and node_modules directory.
+2026-Jul-13 17:17:14.400476 #17 0.853 at requireWithFriendlyError (/app/node_modules/.pnpm/rollup@4.62.2/node_modules/rollup/dist/native.js:<REDACTED>@4.62.2/node_modules/rollup/dist/native.js:130:76)
+2026-Jul-13 17:17:14.400476 #17 0.853 at Module._compile (node:internal/modules/cjs/loader:1781:14)
+2026-Jul-13 17:17:14.400476 #17 0.853 at Object..js (node:internal/modules/cjs/loader:1913:10)
+2026-Jul-13 17:17:14.400476 #17 0.853 at Module.load (node:internal/modules/cjs/loader:1505:32)
+2026-Jul-13 17:17:14.400476 #17 0.853 at Function._load (node:internal/modules/cjs/loader:1309:12)
+2026-Jul-13 17:17:14.400476 #17 0.853 at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)
+2026-Jul-13 17:17:14.400476 #17 0.853 at loadCJSModuleWithModuleLoad (node:internal/modules/esm/translators:335:3)
+2026-Jul-13 17:17:14.400476 #17 0.853 at ModuleWrap.<anonymous> (node:internal/modules/esm/translators:235:7)
+2026-Jul-13 17:17:14.400476 #17 0.853 at ModuleJob.run (node:internal/modules/esm/module_job:343:25) {
+2026-Jul-13 17:17:14.400476 #17 0.853 [cause]: Error: Cannot find module '@rollup/rollup-linux-x64-musl'
+2026-Jul-13 17:17:14.400476 #17 0.853 Require stack:
+2026-Jul-13 17:17:14.400476 #17 0.853 - /app/node_modules/.pnpm/rollup@4.62.2/node_modules/rollup/dist/native.js
+2026-Jul-13 17:17:14.400476 #17 0.853 at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)
+2026-Jul-13 17:17:14.400476 #17 0.853 at defaultResolveImpl (node:internal/modules/cjs/loader:1040:19)
+2026-Jul-13 17:17:14.400476 #17 0.853 at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1045:22)
+2026-Jul-13 17:17:14.400476 #17 0.853 at Function._load (node:internal/modules/cjs/loader:1216:25)
+2026-Jul-13 17:17:14.400476 #17 0.853 at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)
+2026-Jul-13 17:17:14.400476 #17 0.853 at Module.require (node:internal/modules/cjs/loader:1527:12)
+2026-Jul-13 17:17:14.400476 #17 0.853 at require (node:internal/modules/helpers:147:16)
+2026-Jul-13 17:17:14.400476 #17 0.853 at requireWithFriendlyError (/app/node_modules/.pnpm/rollup@4.62.2/node_modules/rollup/dist/native.js:103:10)
+2026-Jul-13 17:17:14.400476 #17 0.853 at Object.<anonymous> (/app/node_modules/.pnpm/rollup@4.62.2/node_modules/rollup/dist/native.js:130:76)
+2026-Jul-13 17:17:14.400476 #17 0.853 at Module._compile (node:internal/modules/cjs/loader:1781:14) {
+2026-Jul-13 17:17:14.400476 #17 0.853 code: 'MODULE_NOT_FOUND',
+2026-Jul-13 17:17:14.400476 #17 0.853 requireStack: [
+2026-Jul-13 17:17:14.400476 #17 0.853 '/app/node_modules/.pnpm/rollup@4.62.2/node_modules/rollup/dist/native.js'
+2026-Jul-13 17:17:14.400476 #17 0.853 ]
+2026-Jul-13 17:17:14.400476 #17 0.853 }
+2026-Jul-13 17:17:14.400476 #17 0.853 }
+2026-Jul-13 17:17:14.400476 #17 0.853
+2026-Jul-13 17:17:14.400476 #17 0.853 Node.js v22.23.1
+2026-Jul-13 17:17:14.400476 #17 0.893 /app/artifacts/ecoarbitrage-site:
+2026-Jul-13 17:17:14.400476 #17 0.893 ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL @workspace/ecoarbitrage-site@0.0.0 build: `vite build --config vite.config.ts`
+2026-Jul-13 17:17:14.400476 #17 0.893 Exit status 1
+2026-Jul-13 17:17:14.400476 #17 ERROR: process "/bin/sh -c pnpm --filter @workspace/ecoarbitrage-site run build" did not complete successfully: exit code: 1
+2026-Jul-13 17:17:14.400476 ------
+2026-Jul-13 17:17:14.400476 > [builder 11/11] RUN pnpm --filter @workspace/ecoarbitrage-site run build:
+2026-Jul-13 17:17:14.400476 0.853 requireStack: [
+2026-Jul-13 17:17:14.400476 0.853 '/app/node_modules/.pnpm/rollup@4.62.2/node_modules/rollup/dist/native.js'
+2026-Jul-13 17:17:14.400476 0.853 ]
+2026-Jul-13 17:17:14.400476 0.853 }
+2026-Jul-13 17:17:14.400476 0.853 }
+2026-Jul-13 17:17:14.400476 0.853
+2026-Jul-13 17:17:14.400476 0.853 Node.js v22.23.1
+2026-Jul-13 17:17:14.400476 0.893 /app/artifacts/ecoarbitrage-site:
+2026-Jul-13 17:17:14.400476 0.893 ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL @workspace/ecoarbitrage-site@0.0.0 build: `vite build --config vite.config.ts`
+2026-Jul-13 17:17:14.400476 0.893 Exit status 1
+2026-Jul-13 17:17:14.400476 ------
+2026-Jul-13 17:17:14.400476 Dockerfile:30
+2026-Jul-13 17:17:14.400476 --------------------
+2026-Jul-13 17:17:14.400476 28 | ENV PORT=3000
+2026-Jul-13 17:17:14.400476 29 |
+2026-Jul-13 17:17:14.400476 30 | >>> RUN pnpm --filter @workspace/ecoarbitrage-site run build
+2026-Jul-13 17:17:14.400476 31 |
+2026-Jul-13 17:17:14.400476 32 | # ── Stage 2: Serve ───────────────────────────────────────────────────────────
+2026-Jul-13 17:17:14.400476 --------------------
+2026-Jul-13 17:17:14.400476 ERROR: failed to build: failed to solve: process "/bin/sh -c pnpm --filter @workspace/ecoarbitrage-site run build" did not complete successfully: exit code: 1
+2026-Jul-13 17:17:14.400476 exit status 1
+2026-Jul-13 17:17:14.461199 ========================================
+2026-Jul-13 17:17:14.468740 Deployment failed. Removing the new version of your application.
+2026-Jul-13 17:17:14.884919 Gracefully shutting down build container: km6sfk8bp1mx1670wg2e3mpt
