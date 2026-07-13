@@ -5,7 +5,7 @@ RUN corepack enable && corepack prepare pnpm@9 --activate
 
 WORKDIR /app
 
-# Copy workspace manifests first for better layer caching
+# Workspace manifests first for better layer caching
 COPY package.json pnpm-workspace.yaml pnpm-lock.yaml ./
 COPY tsconfig*.json ./
 
@@ -13,7 +13,7 @@ COPY tsconfig*.json ./
 COPY lib/                              ./lib/
 COPY artifacts/ecoarbitrage-site/      ./artifacts/ecoarbitrage-site/
 # Stub manifests for sibling artifacts (needed for workspace resolution)
-COPY artifacts/api-server/package.json ./artifacts/api-server/package.json
+COPY artifacts/api-server/package.json    ./artifacts/api-server/package.json
 COPY artifacts/mockup-sandbox/package.json ./artifacts/mockup-sandbox/package.json
 
 RUN pnpm install --frozen-lockfile
@@ -29,12 +29,11 @@ RUN pnpm --filter @workspace/ecoarbitrage-site run build
 FROM nginx:1.27-alpine
 
 COPY --from=builder /app/artifacts/ecoarbitrage-site/dist/public /usr/share/nginx/html
-COPY nginx.conf /etc/nginx/templates/default.conf.template
-COPY docker-entrypoint.sh /docker-entrypoint.sh
+COPY deploy/frontend/nginx.conf /etc/nginx/templates/default.conf.template
+COPY deploy/frontend/docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod +x /docker-entrypoint.sh
 
 # Override in Coolify with the internal URL of your API service
-# e.g. http://api:3001  or  https://api.ecoarbitrage.ir
 ENV API_URL=http://api:3001
 
 EXPOSE 80

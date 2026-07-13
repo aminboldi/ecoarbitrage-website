@@ -34,7 +34,7 @@ COPY --from=builder /app/artifacts/api-server/dist ./dist
 
 ENV PORT=3001
 ENV NODE_ENV=production
-# Set these in Coolify:
+# Set in Coolify:
 # RESEND_API_KEY=...
 # CONTACT_TO_EMAIL=amin.delshad@gmail.com
 # CONTACT_FROM_EMAIL=noreply@ecoarbitrage.ir
