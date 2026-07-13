@@ -18,7 +18,7 @@ COPY artifacts/mockup-sandbox/package.json ./artifacts/mockup-sandbox/package.js
 
 RUN pnpm install --frozen-lockfile
 
-# Vite requires PORT and BASE_PATH at build time
+# Vite requires PORT and BASE_PATH at build time only
 ENV NODE_ENV=production
 ENV BASE_PATH=/
 ENV PORT=3000
@@ -26,6 +26,7 @@ ENV PORT=3000
 RUN pnpm --filter @workspace/ecoarbitrage-site run build
 
 # ── Stage 2: Serve ───────────────────────────────────────────────────────────
+# nginx listens on port 80 — set Coolify service port to 80
 FROM nginx:1.27-alpine
 
 COPY --from=builder /app/artifacts/ecoarbitrage-site/dist/public /usr/share/nginx/html
@@ -36,6 +37,7 @@ RUN chmod +x /docker-entrypoint.sh
 # Override in Coolify with the internal URL of your API service
 ENV API_URL=http://api:3001
 
+# nginx listens on port 80 — configure Coolify port as 80, not 3000
 EXPOSE 80
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["nginx", "-g", "daemon off;"]
