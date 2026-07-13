@@ -7,8 +7,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 border-b border-[#111A23] pb-16">
           
           <div className="md:col-span-6 lg:col-span-5 flex flex-col gap-6">
-            <Link href="/" className="font-serif text-2xl font-medium tracking-tight text-[#F8F5ED]" data-testid="link-footer-logo">
-              EcoArbitrage
+            <Link href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity" data-testid="link-footer-logo">
+              <img src="/logo.png" alt="" aria-hidden="true" className="h-8 w-8 object-contain" />
+              <span className="font-serif text-2xl font-medium tracking-tight text-[#F8F5ED]">EcoArbitrage</span>
             </Link>
             <p className="text-[#7CA8A2] text-sm md:text-base leading-relaxed max-w-md">
               EcoArbitrage is an early-stage evidence and milestone-decision workflow for organizations funding locally led climate-adaptation and nature projects. It does not provide investment, donation, payment, carbon-credit, audit, or certification services.

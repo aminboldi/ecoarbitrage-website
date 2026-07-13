@@ -14,8 +14,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 w-full bg-[#F8F5ED]/90 backdrop-blur-md border-b border-[#E8E2D2]">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="font-serif textxl md:text-2xl font-medium text-[#152025] tracking-tight hover:opacity-80 transition-opacity" data-testid="link-logo">
-          EcoArbitrage
+        <Link href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity" data-testid="link-logo">
+          <img src="/logo.png" alt="" aria-hidden="true" className="h-8 w-8 object-contain" />
+          <span className="font-serif text-xl md:text-2xl font-medium text-[#152025] tracking-tight">EcoArbitrage</span>
         </Link>
 
         {/* Desktop Nav */}
