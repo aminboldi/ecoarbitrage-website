@@ -24,7 +24,7 @@ export default function About() {
             Better climate funding requires better evidence relationships
           </h1>
           
-          <div className="grid md:grid-cols-2 gap-12 text-[#19211E] text-lg leading-relaxed">
+          <div className="grid md:grid-cols-2 gap-12 text-[#19211E] text-lg leading-relaxed mb-16">
             <div>
               <h2 className="font-serif text-2xl mb-4 text-[#547808]">Mission</h2>
               <p>
@@ -37,6 +37,14 @@ export default function About() {
                 A future in which more mission-driven capital can reach capable local organizations because evidence is designed collaboratively, decisions are transparent, and uncertainty is not hidden behind simplistic scores.
               </p>
             </div>
+          </div>
+
+          <div className="rounded-[16px] overflow-hidden">
+            <img
+              src="/images/evidence-archive.jpg"
+              alt="Organised evidence archive and project documentation"
+              className="w-full h-72 md:h-96 object-cover"
+            />
           </div>
         </motion.div>
       </section>

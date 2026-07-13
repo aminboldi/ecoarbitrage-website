@@ -72,9 +72,17 @@ export default function DesignPartners() {
   return (
     <div className="w-full pb-24">
       {/* Hero */}
-      <section className="bg-[#152025] text-[#F8F5ED] pt-24 pb-32 px-6">
+      <section className="bg-[#152025] text-[#F8F5ED] pt-24 pb-32 px-6 relative overflow-hidden">
+        {/* Background image */}
+        <img
+          src="/images/local-partners.jpg"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-15"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#152025]/80 via-[#152025]/85 to-[#152025]" />
         <motion.div 
-          className="max-w-4xl mx-auto text-center"
+          className="max-w-4xl mx-auto text-center relative z-10"
           initial="hidden"
           animate="visible"
           variants={fadeUp}

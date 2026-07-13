@@ -29,6 +29,17 @@ export default function Methodology() {
         </motion.div>
       </section>
 
+      {/* Field image break */}
+      <div className="max-w-6xl mx-auto px-6 -mt-4 pb-12">
+        <div className="rounded-[16px] overflow-hidden">
+          <img
+            src="/images/field-evidence.jpg"
+            alt="Field researcher documenting project observations"
+            className="w-full h-64 md:h-80 object-cover object-center"
+          />
+        </div>
+      </div>
+
       {/* How evidence flows */}
       <section className="bg-white py-24 px-6 border-t border-[#E8E2D2]">
         <motion.div 

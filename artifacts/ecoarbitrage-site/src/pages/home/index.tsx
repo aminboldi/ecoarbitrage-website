@@ -15,7 +15,15 @@ export default function Home() {
     <div className="w-full">
       {/* 2. Hero */}
       <section className="bg-[#152025] text-[#F8F5ED] pt-24 pb-32 px-6 overflow-hidden relative">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        {/* Background landscape image */}
+        <img
+          src="/images/hero-landscape.jpg"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#152025] via-[#152025]/90 to-[#152025]/50" />
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
           <motion.div 
             initial="hidden" animate="visible" variants={fadeUp}
             className="flex flex-col gap-6"
@@ -130,6 +138,14 @@ export default function Home() {
             <p className="text-lg text-[#5E6964] leading-relaxed">
               Funders are being asked to support more locally led action while maintaining responsible stewardship, learning, and accountability. The problem is not a complete absence of information. It is that project evidence arrives through disconnected formats and is rarely organized around the decision the funder must make.
             </p>
+          </div>
+
+          <div className="mb-12 rounded-[16px] overflow-hidden">
+            <img
+              src="/images/nature-grants.jpg"
+              alt="Aerial view of wetland and forest restoration landscape"
+              className="w-full h-64 md:h-80 object-cover"
+            />
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
