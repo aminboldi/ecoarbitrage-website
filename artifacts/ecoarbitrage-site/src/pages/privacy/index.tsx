@@ -44,7 +44,7 @@ export default function Privacy() {
 
           <h2>Contact</h2>
           <p>
-            For privacy-related questions: hello@[verified-domain]
+            For privacy-related questions: hello@ecoarbitrage.ir
           </p>
 
           <h2>Changes</h2>

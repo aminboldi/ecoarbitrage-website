@@ -49,7 +49,7 @@ export default function Terms() {
 
           <h2>Contact</h2>
           <p>
-            Questions about these terms: hello@[verified-domain]
+            Questions about these terms: hello@ecoarbitrage.ir
           </p>
         </div>
       </div>

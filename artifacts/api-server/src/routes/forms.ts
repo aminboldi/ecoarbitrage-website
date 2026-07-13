@@ -68,7 +68,7 @@ let sendEmail: (opts: {
   const apiKey = process.env.RESEND_API_KEY;
   const toEmail = process.env.CONTACT_TO_EMAIL;
   const fromEmail =
-    process.env.CONTACT_FROM_EMAIL ?? "noreply@ecoarbitrage.example";
+    process.env.CONTACT_FROM_EMAIL ?? "noreply@ecoarbitrage.ir";
 
   if (apiKey && toEmail) {
     try {
