@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "EcoArbitrage"
+version = "1.0.0"
+id = "artifacts/ecoarbitrage-site"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22861
+
+[services.development]
+run = "pnpm --filter @workspace/ecoarbitrage-site run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ecoarbitrage-site", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ecoarbitrage-site/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22861"
+BASE_PATH = "/"
