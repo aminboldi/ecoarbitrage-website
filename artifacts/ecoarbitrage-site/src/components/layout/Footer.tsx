@@ -2,9 +2,9 @@ import { Link } from 'wouter';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#102C27] text-[#F8F5ED] pt-20 pb-10 border-t border-[#173E36]">
+    <footer className="bg-[#152025] text-[#F8F5ED] pt-20 pb-10 border-t border-[#111A23]">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 border-b border-[#173E36] pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8 border-b border-[#111A23] pb-16">
           
           <div className="md:col-span-6 lg:col-span-5 flex flex-col gap-6">
             <Link href="/" className="font-serif text-2xl font-medium tracking-tight text-[#F8F5ED]" data-testid="link-footer-logo">

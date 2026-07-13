@@ -67,11 +67,11 @@ export default function Contact() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <h1 className="font-serif text-5xl md:text-6xl text-[#102C27] mb-6 tracking-tight">Bring us a real evidence workflow</h1>
+          <h1 className="font-serif text-5xl md:text-6xl text-[#152025] mb-6 tracking-tight">Bring us a real evidence workflow</h1>
           <p className="text-[#5E6964] text-lg md:text-xl leading-relaxed mb-4">
             Contact EcoArbitrage about: design-partner pilots; funder research; methodology; evaluation or implementation partnerships; investment; accelerator programs; team opportunities; general inquiries.
           </p>
-          <p className="text-[#315A4D] font-medium text-sm">
+          <p className="text-[#547808] font-medium text-sm">
             We review inquiries manually. Response timing may vary during the design-partner stage.
           </p>
         </motion.div>
@@ -92,7 +92,7 @@ export default function Contact() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <h2 className="text-2xl font-serif text-[#102C27] mb-4">Your message has been received</h2>
+              <h2 className="text-2xl font-serif text-[#152025] mb-4">Your message has been received</h2>
               <p className="text-[#5E6964]">We review inquiries manually and will be in touch.</p>
             </div>
           ) : (
@@ -108,21 +108,21 @@ export default function Contact() {
 
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-[#19211E]">Full Name <span className="text-[#B96542]">*</span></label>
+                  <label className="text-sm font-medium text-[#19211E]">Full Name <span className="text-[#A9F00F]">*</span></label>
                   <input 
                     {...register("fullName")}
-                    className="w-full bg-[#F8F5ED] border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D] focus:border-transparent transition-shadow"
+                    className="w-full bg-[#F8F5ED] border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808] focus:border-transparent transition-shadow"
                     placeholder="Jane Doe"
                   />
                   {errors.fullName && <p className="text-[#A95749] text-xs mt-1">{errors.fullName.message}</p>}
                 </div>
                 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-[#19211E]">Work Email <span className="text-[#B96542]">*</span></label>
+                  <label className="text-sm font-medium text-[#19211E]">Work Email <span className="text-[#A9F00F]">*</span></label>
                   <input 
                     {...register("workEmail")}
                     type="email"
-                    className="w-full bg-[#F8F5ED] border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D] focus:border-transparent transition-shadow"
+                    className="w-full bg-[#F8F5ED] border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808] focus:border-transparent transition-shadow"
                     placeholder="jane@organization.org"
                   />
                   {errors.workEmail && <p className="text-[#A95749] text-xs mt-1">{errors.workEmail.message}</p>}
@@ -131,10 +131,10 @@ export default function Contact() {
 
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-[#19211E]">Company / Organization <span className="text-[#B96542]">*</span></label>
+                  <label className="text-sm font-medium text-[#19211E]">Company / Organization <span className="text-[#A9F00F]">*</span></label>
                   <input 
                     {...register("company")}
-                    className="w-full bg-[#F8F5ED] border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D] focus:border-transparent transition-shadow"
+                    className="w-full bg-[#F8F5ED] border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808] focus:border-transparent transition-shadow"
                     placeholder="Climate Foundation"
                   />
                   {errors.company && <p className="text-[#A95749] text-xs mt-1">{errors.company.message}</p>}
@@ -144,7 +144,7 @@ export default function Contact() {
                   <label className="text-sm font-medium text-[#19211E]">Website <span className="text-[#5E6964] font-normal">(Optional)</span></label>
                   <input 
                     {...register("website")}
-                    className="w-full bg-[#F8F5ED] border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D] focus:border-transparent transition-shadow"
+                    className="w-full bg-[#F8F5ED] border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808] focus:border-transparent transition-shadow"
                     placeholder="https://organization.org"
                   />
                   {errors.website && <p className="text-[#A95749] text-xs mt-1">{errors.website.message}</p>}
@@ -152,10 +152,10 @@ export default function Contact() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium text-[#19211E]">Inquiry Type <span className="text-[#B96542]">*</span></label>
+                <label className="text-sm font-medium text-[#19211E]">Inquiry Type <span className="text-[#A9F00F]">*</span></label>
                 <select 
                   {...register("inquiryType")}
-                  className="w-full bg-[#F8F5ED] border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D] focus:border-transparent transition-shadow appearance-none"
+                  className="w-full bg-[#F8F5ED] border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808] focus:border-transparent transition-shadow appearance-none"
                 >
                   <option value="">Select an option...</option>
                   <option value="Design-partner pilot">Design-partner pilot</option>
@@ -172,11 +172,11 @@ export default function Contact() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium text-[#19211E]">Message <span className="text-[#B96542]">*</span></label>
+                <label className="text-sm font-medium text-[#19211E]">Message <span className="text-[#A9F00F]">*</span></label>
                 <textarea 
                   {...register("message")}
                   rows={5}
-                  className="w-full bg-[#F8F5ED] border border-[#E8E2D2] rounded-[8px] px-4 py-3 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D] focus:border-transparent transition-shadow resize-y"
+                  className="w-full bg-[#F8F5ED] border border-[#E8E2D2] rounded-[8px] px-4 py-3 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808] focus:border-transparent transition-shadow resize-y"
                   placeholder="How can we help?"
                 ></textarea>
                 {errors.message && <p className="text-[#A95749] text-xs mt-1">{errors.message.message}</p>}
@@ -185,10 +185,10 @@ export default function Contact() {
               <div className="space-y-4 pt-2">
                 <label className="flex items-start gap-3 cursor-pointer group">
                   <div className="relative flex items-center pt-0.5">
-                    <input type="checkbox" {...register("privacyConsent")} className="w-5 h-5 rounded-[4px] border-[#E8E2D2] text-[#315A4D] focus:ring-[#315A4D] bg-[#F8F5ED] cursor-pointer" />
+                    <input type="checkbox" {...register("privacyConsent")} className="w-5 h-5 rounded-[4px] border-[#E8E2D2] text-[#547808] focus:ring-[#547808] bg-[#F8F5ED] cursor-pointer" />
                   </div>
                   <span className="text-sm text-[#5E6964] leading-relaxed">
-                    I accept the privacy notice. <span className="text-[#B96542]">*</span>
+                    I accept the privacy notice. <span className="text-[#A9F00F]">*</span>
                   </span>
                 </label>
                 {errors.privacyConsent && <p className="text-[#A95749] text-xs">{errors.privacyConsent.message}</p>}
@@ -197,7 +197,7 @@ export default function Contact() {
               <button 
                 type="submit"
                 disabled={status === 'loading'}
-                className="w-full md:w-auto mt-4 inline-flex items-center justify-center rounded-[10px] bg-[#102C27] px-8 py-3.5 text-base font-medium text-[#F8F5ED] hover:bg-[#173E36] transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full md:w-auto mt-4 inline-flex items-center justify-center rounded-[10px] bg-[#152025] px-8 py-3.5 text-base font-medium text-[#F8F5ED] hover:bg-[#111A23] transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
                 data-testid="button-contact-submit"
               >
                 {status === 'loading' ? 'Sending...' : 'Send message'}

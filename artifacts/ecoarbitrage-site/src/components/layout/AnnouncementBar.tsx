@@ -20,7 +20,7 @@ export default function AnnouncementBar() {
   if (!isVisible) return null;
 
   return (
-    <div className="bg-[#102C27] text-[#F8F5ED] px-4 py-3 relative z-50">
+    <div className="bg-[#152025] text-[#F8F5ED] px-4 py-3 relative z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-center text-sm md:text-base font-medium">
         <div className="flex-1 text-center md:flex md:items-center md:justify-center gap-3">
           <span className="hidden md:inline">Selected design-partner pilots are now being scoped for climate grant portfolios.</span>

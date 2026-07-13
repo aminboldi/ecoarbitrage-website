@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* 2. Hero */}
-      <section className="bg-[#102C27] text-[#F8F5ED] pt-24 pb-32 px-6 overflow-hidden relative">
+      <section className="bg-[#152025] text-[#F8F5ED] pt-24 pb-32 px-6 overflow-hidden relative">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
           <motion.div 
             initial="hidden" animate="visible" variants={fadeUp}
@@ -32,7 +32,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <Link 
                 href="/design-partners" 
-                className="inline-flex items-center justify-center rounded-[10px] bg-[#F8F5ED] px-8 py-4 text-lg font-medium text-[#102C27] hover:bg-white transition-colors"
+                className="inline-flex items-center justify-center rounded-[10px] bg-[#F8F5ED] px-8 py-4 text-lg font-medium text-[#152025] hover:bg-white transition-colors"
               >
                 Apply for a design-partner pilot
               </Link>
@@ -53,22 +53,22 @@ export default function Home() {
             className="relative lg:h-[500px] flex items-center justify-center lg:justify-end"
           >
             {/* Visual: Concept evidence packet card */}
-            <div className="bg-[#173E36] rounded-[12px] p-6 border border-[#315A4D] shadow-2xl w-full max-w-md relative font-sans">
-              <div className="absolute top-0 right-0 bg-[#315A4D] text-[#F8F5ED] text-[10px] font-bold uppercase px-3 py-1 rounded-bl-[8px] rounded-tr-[12px] tracking-wider">
+            <div className="bg-[#111A23] rounded-[12px] p-6 border border-[#547808] shadow-2xl w-full max-w-md relative font-sans">
+              <div className="absolute top-0 right-0 bg-[#547808] text-[#F8F5ED] text-[10px] font-bold uppercase px-3 py-1 rounded-bl-[8px] rounded-tr-[12px] tracking-wider">
                 Illustrative product concept
               </div>
               <div className="mb-6 pt-2">
                 <div className="text-[#7CA8A2] text-xs font-medium uppercase tracking-wide mb-2">Milestone Review</div>
                 <h3 className="text-[#F8F5ED] font-serif text-2xl mb-3">Riparian restoration Q3</h3>
-                <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-[#315A4D] text-[#F8F5ED] border border-[#7CA8A2]/30">Under review</span>
+                <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-[#547808] text-[#F8F5ED] border border-[#7CA8A2]/30">Under review</span>
               </div>
               
               <div className="space-y-3 relative">
                 {/* Connecting line */}
-                <div className="absolute left-4 top-4 bottom-4 w-px bg-[#315A4D]/50 z-0"></div>
+                <div className="absolute left-4 top-4 bottom-4 w-px bg-[#547808]/50 z-0"></div>
 
-                <div className="bg-[#102C27] border border-[#315A4D] rounded-[8px] p-4 relative z-10 ml-8">
-                  <div className="absolute -left-[37px] top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#4F7D5B] border-2 border-[#173E36]"></div>
+                <div className="bg-[#152025] border border-[#547808] rounded-[8px] p-4 relative z-10 ml-8">
+                  <div className="absolute -left-[37px] top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#4F7D5B] border-2 border-[#111A23]"></div>
                   <div className="flex justify-between items-start mb-2">
                     <span className="text-[#F8F5ED] text-sm font-medium">Tree planting count</span>
                     <span className="text-[#4F7D5B] text-xs font-medium flex items-center gap-1"><CheckCircle2 className="w-3 h-3"/> Supported</span>
@@ -78,8 +78,8 @@ export default function Home() {
                   </div>
                 </div>
                 
-                <div className="bg-[#102C27] border border-[#315A4D] rounded-[8px] p-4 relative z-10 ml-8">
-                  <div className="absolute -left-[37px] top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#D5A84E] border-2 border-[#173E36]"></div>
+                <div className="bg-[#152025] border border-[#547808] rounded-[8px] p-4 relative z-10 ml-8">
+                  <div className="absolute -left-[37px] top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#D5A84E] border-2 border-[#111A23]"></div>
                   <div className="flex justify-between items-start mb-2">
                     <span className="text-[#F8F5ED] text-sm font-medium">Vegetation health</span>
                     <span className="text-[#D5A84E] text-xs font-medium flex items-center gap-1">~ Partial</span>
@@ -89,8 +89,8 @@ export default function Home() {
                   </div>
                 </div>
                 
-                <div className="bg-[#102C27] border border-[#315A4D] rounded-[8px] p-4 relative z-10 ml-8">
-                  <div className="absolute -left-[37px] top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#A95749] border-2 border-[#173E36]"></div>
+                <div className="bg-[#152025] border border-[#547808] rounded-[8px] p-4 relative z-10 ml-8">
+                  <div className="absolute -left-[37px] top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#A95749] border-2 border-[#111A23]"></div>
                   <div className="flex justify-between items-start mb-2">
                     <span className="text-[#F8F5ED] text-sm font-medium">Community feedback</span>
                     <span className="text-[#A95749] text-xs font-medium flex items-center gap-1">! Missing</span>
@@ -100,8 +100,8 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="bg-[#102C27] border border-[#315A4D] rounded-[8px] p-4 relative z-10 ml-8 opacity-70">
-                  <div className="absolute -left-[37px] top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#5E6964] border-2 border-[#173E36]"></div>
+                <div className="bg-[#152025] border border-[#547808] rounded-[8px] p-4 relative z-10 ml-8 opacity-70">
+                  <div className="absolute -left-[37px] top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#5E6964] border-2 border-[#111A23]"></div>
                   <div className="flex justify-between items-start mb-2">
                     <span className="text-[#F8F5ED] text-sm font-medium">Next Tranche</span>
                     <span className="text-[#5E6964] text-xs font-medium flex items-center gap-1">··· Pending</span>
@@ -123,8 +123,8 @@ export default function Home() {
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
         >
           <div className="max-w-3xl mb-16">
-            <span className="text-[#B96542] text-sm font-semibold tracking-widest uppercase mb-4 block">The funding challenge is not only capital</span>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#102C27] leading-[1.1] mb-6 tracking-tight">
+            <span className="text-[#A9F00F] text-sm font-semibold tracking-widest uppercase mb-4 block">The funding challenge is not only capital</span>
+            <h2 className="font-serif text-4xl md:text-5xl text-[#152025] leading-[1.1] mb-6 tracking-tight">
               More climate funding must reach local implementation. The evidence workflow has not caught up.
             </h2>
             <p className="text-lg text-[#5E6964] leading-relaxed">
@@ -139,13 +139,13 @@ export default function Home() {
               { title: "A real operating market", desc: "European environmental foundations already manage thousands of grants across climate, nature, and environmental priorities." }
             ].map((card, i) => (
               <div key={i} className="bg-[#F1ECE0] p-8 rounded-[12px] border border-[#E8E2D2]">
-                <h3 className="text-[#102C27] font-medium text-xl mb-4">{card.title}</h3>
+                <h3 className="text-[#152025] font-medium text-xl mb-4">{card.title}</h3>
                 <p className="text-[#5E6964] leading-relaxed">{card.desc}</p>
               </div>
             ))}
           </div>
 
-          <Link href="/methodology" className="inline-flex items-center gap-2 text-[#315A4D] font-medium hover:text-[#102C27] transition-colors">
+          <Link href="/methodology" className="inline-flex items-center gap-2 text-[#547808] font-medium hover:text-[#152025] transition-colors">
             Read our methodology →
           </Link>
         </motion.div>
@@ -159,10 +159,10 @@ export default function Home() {
         >
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-[#7CA8A2] text-sm font-semibold tracking-widest uppercase mb-4 block">The moment of friction</span>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#102C27] leading-[1.1] mb-8 tracking-tight">
+            <h2 className="font-serif text-4xl md:text-5xl text-[#152025] leading-[1.1] mb-8 tracking-tight">
               A project report arrives. The decision still depends on manual interpretation.
             </h2>
-            <p className="font-serif italic text-xl md:text-2xl text-[#315A4D] leading-relaxed mb-6">
+            <p className="font-serif italic text-xl md:text-2xl text-[#547808] leading-relaxed mb-6">
               "Which evidence supports each claim? Is the evidence current and attributable to this milestone? What is missing? Does an external signal corroborate or contradict the submission? What should be clarified? Is the next tranche ready for approval?"
             </p>
             <p className="text-[#5E6964]">
@@ -177,8 +177,8 @@ export default function Home() {
               { title: "Decisions without history", desc: "The final rationale may remain in a meeting or email instead of the grant record." },
               { title: "Reporting without learning", desc: "The next project repeats the same evidence design mistakes." }
             ].map((card, i) => (
-              <div key={i} className="border-t-2 border-[#102C27] pt-6">
-                <h3 className="text-[#102C27] font-medium text-lg mb-3">{card.title}</h3>
+              <div key={i} className="border-t-2 border-[#152025] pt-6">
+                <h3 className="text-[#152025] font-medium text-lg mb-3">{card.title}</h3>
                 <p className="text-[#5E6964] text-sm leading-relaxed">{card.desc}</p>
               </div>
             ))}
@@ -193,14 +193,14 @@ export default function Home() {
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
         >
           <div>
-            <span className="text-[#B96542] text-sm font-semibold tracking-widest uppercase mb-4 block">Why it matters</span>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#102C27] leading-[1.1] mb-6 tracking-tight">
+            <span className="text-[#A9F00F] text-sm font-semibold tracking-widest uppercase mb-4 block">Why it matters</span>
+            <h2 className="font-serif text-4xl md:text-5xl text-[#152025] leading-[1.1] mb-6 tracking-tight">
               Weak evidence creates both delay and distance
             </h2>
             <p className="text-lg text-[#5E6964] leading-relaxed mb-8">
               When evidence is difficult to review, funders may: delay a decision; request repeated reports; hire a consultant; conduct an expensive site visit; continue funding without sufficient confidence; or avoid smaller local organizations whose work is harder to monitor. EcoArbitrage is designed to reduce uncertainty without turning oversight into another extractive reporting burden.
             </p>
-            <Link href="/contact" className="inline-flex items-center gap-2 text-[#315A4D] font-medium hover:text-[#102C27] transition-colors">
+            <Link href="/contact" className="inline-flex items-center gap-2 text-[#547808] font-medium hover:text-[#152025] transition-colors">
               Review your current workflow →
             </Link>
           </div>
@@ -209,7 +209,7 @@ export default function Home() {
             <div className="bg-white p-8 rounded-[16px] border border-[#E8E2D2] shadow-sm relative">
               <div className="flex flex-col gap-6 relative z-10">
                 <div className="flex items-center justify-between p-4 bg-[#F8F5ED] rounded-[8px] border border-[#E8E2D2]">
-                  <span className="font-medium text-[#102C27]">Milestone Report Submitted</span>
+                  <span className="font-medium text-[#152025]">Milestone Report Submitted</span>
                   <span className="text-xs text-[#5E6964]">Day 1</span>
                 </div>
                 <div className="w-px h-6 bg-[#A95749] mx-auto relative">
@@ -237,8 +237,8 @@ export default function Home() {
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
         >
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-[#315A4D] text-sm font-semibold tracking-widest uppercase mb-4 block">A missing layer</span>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#102C27] leading-[1.1] mb-6 tracking-tight">
+            <span className="text-[#547808] text-sm font-semibold tracking-widest uppercase mb-4 block">A missing layer</span>
+            <h2 className="font-serif text-4xl md:text-5xl text-[#152025] leading-[1.1] mb-6 tracking-tight">
               Grant systems, evaluators, and project data each solve part of the problem
             </h2>
           </div>
@@ -251,9 +251,9 @@ export default function Home() {
               { title: "Spreadsheets and email", desc: "Flexible and familiar. Remaining need: provenance, portfolio consistency, and preserved decision rationale." }
             ].map((alt, i) => (
               <div key={i} className="flex gap-4">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#B96542] mt-2.5 shrink-0"></div>
+                <div className="w-1.5 h-1.5 rounded-full bg-[#A9F00F] mt-2.5 shrink-0"></div>
                 <div>
-                  <h3 className="text-[#102C27] font-medium text-lg mb-2">{alt.title}</h3>
+                  <h3 className="text-[#152025] font-medium text-lg mb-2">{alt.title}</h3>
                   <p className="text-[#5E6964] leading-relaxed text-sm md:text-base">{alt.desc}</p>
                 </div>
               </div>
@@ -262,7 +262,7 @@ export default function Home() {
 
           <div className="text-center">
             <p className="text-[#19211E] font-medium mb-6">EcoArbitrage is intended to complement existing systems, not replace them.</p>
-            <Link href="/solution" className="inline-flex items-center gap-2 text-[#315A4D] font-medium hover:text-[#102C27] transition-colors">
+            <Link href="/solution" className="inline-flex items-center gap-2 text-[#547808] font-medium hover:text-[#152025] transition-colors">
               Explore the solution →
             </Link>
           </div>
@@ -270,13 +270,13 @@ export default function Home() {
       </section>
 
       {/* 7. Solution Overview */}
-      <section className="bg-[#102C27] py-24 md:py-32 px-6">
+      <section className="bg-[#152025] py-24 md:py-32 px-6">
         <motion.div 
           className="max-w-7xl mx-auto"
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
         >
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <span className="text-[#B96542] text-sm font-semibold tracking-widest uppercase mb-4 block">The EcoArbitrage approach</span>
+            <span className="text-[#A9F00F] text-sm font-semibold tracking-widest uppercase mb-4 block">The EcoArbitrage approach</span>
             <h2 className="font-serif text-4xl md:text-5xl text-[#F8F5ED] leading-[1.1] mb-6 tracking-tight">
               Turn each milestone into an evidence plan before implementation begins
             </h2>
@@ -294,7 +294,7 @@ export default function Home() {
               { icon: Scale, title: "Human decision", desc: "Record the authorized decision, rationale, conditions, and next requirement." },
               { icon: History, title: "Portfolio memory", desc: "Reuse evidence learning across future grants." }
             ].map((feat, i) => (
-              <div key={i} className="bg-[#173E36] p-8 rounded-[12px] border border-[#315A4D]">
+              <div key={i} className="bg-[#111A23] p-8 rounded-[12px] border border-[#547808]">
                 <feat.icon className="w-8 h-8 text-[#7CA8A2] mb-6" />
                 <h3 className="text-[#F8F5ED] font-medium text-xl mb-3">{feat.title}</h3>
                 <p className="text-[#7CA8A2] text-sm leading-relaxed">{feat.desc}</p>
@@ -317,8 +317,8 @@ export default function Home() {
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
         >
           <div className="text-center mb-16">
-            <span className="text-[#315A4D] text-sm font-semibold tracking-widest uppercase mb-4 block">Pilot workflow</span>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#102C27] leading-[1.1] tracking-tight">
+            <span className="text-[#547808] text-sm font-semibold tracking-widest uppercase mb-4 block">Pilot workflow</span>
+            <h2 className="font-serif text-4xl md:text-5xl text-[#152025] leading-[1.1] tracking-tight">
               From grant agreement to decision record
             </h2>
           </div>
@@ -333,11 +333,11 @@ export default function Home() {
               { num: 6, title: "Record the authorized decision", desc: "Approve, approve with conditions, request clarification, hold, or escalate." }
             ].map((step, i) => (
               <div key={i} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-                <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-[#F8F5ED] bg-[#102C27] text-white font-medium shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-[#F8F5ED] bg-[#152025] text-white font-medium shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                   {step.num}
                 </div>
                 <div className="w-[calc(100%-4rem)] md:w-[calc(50%-3rem)] bg-white p-6 rounded-[12px] border border-[#E8E2D2] shadow-sm">
-                  <h3 className="font-medium text-[#102C27] text-lg mb-2">{step.title}</h3>
+                  <h3 className="font-medium text-[#152025] text-lg mb-2">{step.title}</h3>
                   <p className="text-[#5E6964] text-sm leading-relaxed">{step.desc}</p>
                 </div>
               </div>
@@ -345,7 +345,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-16">
-            <Link href="/methodology" className="inline-flex items-center gap-2 text-[#315A4D] font-medium hover:text-[#102C27] transition-colors">
+            <Link href="/methodology" className="inline-flex items-center gap-2 text-[#547808] font-medium hover:text-[#152025] transition-colors">
               View the methodology →
             </Link>
           </div>
@@ -360,7 +360,7 @@ export default function Home() {
         >
           <div className="text-center mb-16">
             <span className="text-[#7CA8A2] text-sm font-semibold tracking-widest uppercase mb-4 block">How it looks in practice</span>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#102C27] leading-[1.1] tracking-tight mb-4">
+            <h2 className="font-serif text-4xl md:text-5xl text-[#152025] leading-[1.1] tracking-tight mb-4">
               A milestone review, made visible
             </h2>
             <p className="text-[#5E6964]">Illustrative product concept. Fictional project data.</p>
@@ -368,7 +368,7 @@ export default function Home() {
 
           {/* Product Mockup */}
           <div className="bg-[#F8F5ED] rounded-[16px] p-4 md:p-8 border border-[#E8E2D2] shadow-md relative overflow-hidden max-w-4xl mx-auto">
-            <div className="absolute -top-3 -right-3 bg-[#B96542] text-white text-[10px] uppercase tracking-wider px-3 py-1.5 rounded-[4px] font-bold shadow-md z-20">Illustrative product concept</div>
+            <div className="absolute -top-3 -right-3 bg-[#A9F00F] text-white text-[10px] uppercase tracking-wider px-3 py-1.5 rounded-[4px] font-bold shadow-md z-20">Illustrative product concept</div>
             <div className="opacity-[0.03] absolute inset-0 pointer-events-none flex items-center justify-center font-serif text-6xl md:text-8xl rotate-[-15deg] whitespace-nowrap z-0">
               Example evidence packet
             </div>
@@ -377,7 +377,7 @@ export default function Home() {
               {/* Header */}
               <div className="p-6 border-b border-[#E8E2D2] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
-                  <h3 className="text-xl font-medium text-[#102C27] mb-1">Riparian Restoration — Milestone 2 of 4</h3>
+                  <h3 className="text-xl font-medium text-[#152025] mb-1">Riparian Restoration — Milestone 2 of 4</h3>
                   <p className="text-[#5E6964] text-sm">Submitted Oct 12 • 4 Claims • 1 Exception</p>
                 </div>
                 <div className="shrink-0 bg-[#E8E2D2]/50 text-[#19211E] px-3 py-1 rounded-full text-xs font-medium border border-[#E8E2D2]">
@@ -412,7 +412,7 @@ export default function Home() {
                     <h4 className="font-medium text-[#19211E] text-sm">Satellite NDVI comparison</h4>
                     <p className="text-xs text-[#5E6964] mt-1">Matches regional baseline</p>
                   </div>
-                  <span className="inline-flex items-center gap-1.5 text-[#315A4D] text-sm font-medium bg-[#315A4D]/10 px-2.5 py-1 rounded-[6px]">
+                  <span className="inline-flex items-center gap-1.5 text-[#547808] text-sm font-medium bg-[#547808]/10 px-2.5 py-1 rounded-[6px]">
                     <ScanSearch className="w-4 h-4"/> Corroborating signal
                   </span>
                 </div>
@@ -441,14 +441,14 @@ export default function Home() {
               {/* Review Section */}
               <div className="p-6 border-t border-[#E8E2D2] bg-white rounded-b-[12px]">
                 <div className="mb-4">
-                  <label className="text-xs font-medium text-[#102C27] uppercase tracking-wide">Reviewer Note</label>
+                  <label className="text-xs font-medium text-[#152025] uppercase tracking-wide">Reviewer Note</label>
                   <div className="mt-2 text-sm text-[#19211E] bg-[#F8F5ED] p-3 rounded-[8px] border border-[#E8E2D2]">
                     "Holding final approval until the hydrology sensor file is re-uploaded. Vegetation survey is acceptable for this early stage."
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-3">
                   <button className="px-4 py-2 bg-[#E8E2D2] text-[#5E6964] rounded-[6px] text-sm font-medium cursor-not-allowed">Approve full tranche</button>
-                  <button className="px-4 py-2 bg-[#102C27] text-white rounded-[6px] text-sm font-medium shadow-md">Approve with conditions</button>
+                  <button className="px-4 py-2 bg-[#152025] text-white rounded-[6px] text-sm font-medium shadow-md">Approve with conditions</button>
                   <button className="px-4 py-2 border border-[#E8E2D2] text-[#19211E] rounded-[6px] text-sm font-medium bg-white">Request clarification</button>
                 </div>
               </div>
@@ -468,8 +468,8 @@ export default function Home() {
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
         >
           <div className="text-center mb-16">
-            <span className="text-[#B96542] text-sm font-semibold tracking-widest uppercase mb-4 block">What it changes</span>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#102C27] leading-[1.1] tracking-tight">
+            <span className="text-[#A9F00F] text-sm font-semibold tracking-widest uppercase mb-4 block">What it changes</span>
+            <h2 className="font-serif text-4xl md:text-5xl text-[#152025] leading-[1.1] tracking-tight">
               A more defensible decision — not a higher score
             </h2>
           </div>
@@ -485,10 +485,10 @@ export default function Home() {
             ].map((ben, i) => (
               <div key={i} className="flex gap-5">
                 <div className="w-12 h-12 rounded-full bg-white border border-[#E8E2D2] flex items-center justify-center shrink-0">
-                  <ben.icon className="w-5 h-5 text-[#315A4D]" />
+                  <ben.icon className="w-5 h-5 text-[#547808]" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium text-[#102C27] mb-2">{ben.title}</h3>
+                  <h3 className="text-xl font-medium text-[#152025] mb-2">{ben.title}</h3>
                   <p className="text-[#5E6964] leading-relaxed">{ben.desc}</p>
                 </div>
               </div>
@@ -504,7 +504,7 @@ export default function Home() {
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
         >
           <span className="text-[#7CA8A2] text-sm font-semibold tracking-widest uppercase mb-4 block">Not a grant system. Not an evaluator.</span>
-          <h2 className="font-serif text-4xl md:text-5xl text-[#102C27] leading-[1.1] mb-6 tracking-tight">
+          <h2 className="font-serif text-4xl md:text-5xl text-[#152025] leading-[1.1] mb-6 tracking-tight">
             EcoArbitrage connects the workflow that sits between existing tools
           </h2>
           <p className="text-lg text-[#5E6964] leading-relaxed mb-12">
@@ -516,7 +516,7 @@ export default function Home() {
               Grant-management system
             </div>
             <div className="hidden md:block w-8 h-px bg-[#E8E2D2]"></div>
-            <div className="bg-[#102C27] p-5 rounded-[10px] border border-[#315A4D] text-white text-base font-medium font-serif w-56 text-center shadow-lg transform scale-105">
+            <div className="bg-[#152025] p-5 rounded-[10px] border border-[#547808] text-white text-base font-medium font-serif w-56 text-center shadow-lg transform scale-105">
               EcoArbitrage
             </div>
             <div className="hidden md:block w-8 h-px bg-[#E8E2D2]"></div>
@@ -525,7 +525,7 @@ export default function Home() {
             </div>
           </div>
 
-          <Link href="/solution" className="inline-flex items-center justify-center rounded-[10px] bg-[#102C27] px-8 py-3.5 text-base font-medium text-[#F8F5ED] hover:bg-[#173E36] transition-colors">
+          <Link href="/solution" className="inline-flex items-center justify-center rounded-[10px] bg-[#152025] px-8 py-3.5 text-base font-medium text-[#F8F5ED] hover:bg-[#111A23] transition-colors">
             See the full solution →
           </Link>
         </motion.div>
@@ -537,8 +537,8 @@ export default function Home() {
           className="max-w-4xl mx-auto text-center"
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
         >
-          <span className="text-[#315A4D] text-sm font-semibold tracking-widest uppercase mb-4 block">Who this is for</span>
-          <h2 className="font-serif text-4xl md:text-5xl text-[#102C27] leading-[1.1] mb-6 tracking-tight">
+          <span className="text-[#547808] text-sm font-semibold tracking-widest uppercase mb-4 block">Who this is for</span>
+          <h2 className="font-serif text-4xl md:text-5xl text-[#152025] leading-[1.1] mb-6 tracking-tight">
             Climate funders making live milestone decisions
           </h2>
           <p className="text-lg text-[#19211E] leading-relaxed mb-6">
@@ -557,8 +557,8 @@ export default function Home() {
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
         >
           <div className="text-center mb-16">
-            <span className="text-[#B96542] text-sm font-semibold tracking-widest uppercase mb-4 block">Start with the funding decisions that already require evidence</span>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#102C27] leading-[1.1] tracking-tight">
+            <span className="text-[#A9F00F] text-sm font-semibold tracking-widest uppercase mb-4 block">Start with the funding decisions that already require evidence</span>
+            <h2 className="font-serif text-4xl md:text-5xl text-[#152025] leading-[1.1] tracking-tight">
               Six ways to begin
             </h2>
           </div>
@@ -573,7 +573,7 @@ export default function Home() {
               { title: "Program learning", desc: "Understand which evidence requirements were useful and which created burden without improving decisions." }
             ].map((uc, i) => (
               <div key={i} className="bg-white p-8 rounded-[12px] border border-[#E8E2D2] hover:border-[#7CA8A2] transition-colors shadow-sm">
-                <h3 className="text-[#102C27] font-medium text-lg mb-3">{uc.title}</h3>
+                <h3 className="text-[#152025] font-medium text-lg mb-3">{uc.title}</h3>
                 <p className="text-[#5E6964] leading-relaxed text-sm">{uc.desc}</p>
               </div>
             ))}
@@ -582,13 +582,13 @@ export default function Home() {
       </section>
 
       {/* 14. Methodology Preview */}
-      <section className="bg-[#173E36] text-[#F8F5ED] py-24 md:py-32 px-6">
+      <section className="bg-[#111A23] text-[#F8F5ED] py-24 md:py-32 px-6">
         <motion.div 
           className="max-w-7xl mx-auto"
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
         >
           <div className="text-center max-w-4xl mx-auto mb-16">
-            <span className="text-[#B96542] text-sm font-semibold tracking-widest uppercase mb-4 block">Evidence without false certainty</span>
+            <span className="text-[#A9F00F] text-sm font-semibold tracking-widest uppercase mb-4 block">Evidence without false certainty</span>
             <h2 className="font-serif text-4xl md:text-5xl text-[#F8F5ED] leading-[1.1] tracking-tight">
               Observation, interpretation, and decision should remain visibly separate
             </h2>
@@ -602,7 +602,7 @@ export default function Home() {
               { icon: AlertCircle, title: "Uncertainty is a result", desc: '"Not yet observable" is often more honest than a forced score.' },
               { icon: Users, title: "Local participation", desc: "Evidence requirements should be designed with implementing partners." }
             ].map((prin, i) => (
-              <div key={i} className="flex flex-col items-center text-center p-6 bg-[#102C27] rounded-[12px] border border-[#315A4D]">
+              <div key={i} className="flex flex-col items-center text-center p-6 bg-[#152025] rounded-[12px] border border-[#547808]">
                 <prin.icon className="w-8 h-8 text-[#7CA8A2] mb-4" />
                 <h3 className="text-white font-medium text-base mb-2">{prin.title}</h3>
                 <p className="text-[#7CA8A2] text-xs leading-relaxed">{prin.desc}</p>
@@ -625,8 +625,8 @@ export default function Home() {
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
         >
           <div className="text-center mb-12">
-            <span className="text-[#315A4D] text-sm font-semibold tracking-widest uppercase mb-4 block">Designed to fit, not replace</span>
-            <h2 className="font-serif text-4xl md:text-5xl text-[#102C27] leading-[1.1] mb-6 tracking-tight">
+            <span className="text-[#547808] text-sm font-semibold tracking-widest uppercase mb-4 block">Designed to fit, not replace</span>
+            <h2 className="font-serif text-4xl md:text-5xl text-[#152025] leading-[1.1] mb-6 tracking-tight">
               Keep your system of record
             </h2>
             <p className="text-lg text-[#5E6964] leading-relaxed max-w-3xl mx-auto">
@@ -638,31 +638,31 @@ export default function Home() {
           <div className="w-full overflow-x-auto py-8">
             <svg viewBox="0 0 800 200" className="w-full min-w-[600px] h-auto font-sans">
               <g transform="translate(50, 75)">
-                <rect x="0" y="0" width="160" height="50" rx="8" fill="#F1ECE0" stroke="#315A4D" strokeWidth="2" />
-                <text x="80" y="25" textAnchor="middle" dominantBaseline="middle" fill="#102C27" fontSize="13" fontWeight="500">Grant-management</text>
+                <rect x="0" y="0" width="160" height="50" rx="8" fill="#F1ECE0" stroke="#547808" strokeWidth="2" />
+                <text x="80" y="25" textAnchor="middle" dominantBaseline="middle" fill="#152025" fontSize="13" fontWeight="500">Grant-management</text>
                 
-                <path d="M 160 25 L 240 25" stroke="#315A4D" strokeWidth="2" fill="none" markerEnd="url(#arrow)" />
+                <path d="M 160 25 L 240 25" stroke="#547808" strokeWidth="2" fill="none" markerEnd="url(#arrow)" />
                 
-                <rect x="240" y="-10" width="180" height="70" rx="8" fill="#102C27" stroke="#173E36" strokeWidth="2" />
+                <rect x="240" y="-10" width="180" height="70" rx="8" fill="#152025" stroke="#111A23" strokeWidth="2" />
                 <text x="330" y="25" textAnchor="middle" dominantBaseline="middle" fill="#F8F5ED" fontSize="18" fontFamily="Newsreader" fontWeight="500">EcoArbitrage</text>
                 
-                <path d="M 500 25 L 420 25" stroke="#315A4D" strokeWidth="2" fill="none" markerEnd="url(#arrow)" />
+                <path d="M 500 25 L 420 25" stroke="#547808" strokeWidth="2" fill="none" markerEnd="url(#arrow)" />
                 
-                <rect x="500" y="-40" width="180" height="40" rx="8" fill="#F1ECE0" stroke="#315A4D" strokeWidth="2" />
-                <text x="590" y="-20" textAnchor="middle" dominantBaseline="middle" fill="#102C27" fontSize="13" fontWeight="500">Document repository</text>
+                <rect x="500" y="-40" width="180" height="40" rx="8" fill="#F1ECE0" stroke="#547808" strokeWidth="2" />
+                <text x="590" y="-20" textAnchor="middle" dominantBaseline="middle" fill="#152025" fontSize="13" fontWeight="500">Document repository</text>
                 
-                <rect x="500" y="5" width="180" height="40" rx="8" fill="#F1ECE0" stroke="#315A4D" strokeWidth="2" />
-                <text x="590" y="25" textAnchor="middle" dominantBaseline="middle" fill="#102C27" fontSize="13" fontWeight="500">Finance workflow</text>
+                <rect x="500" y="5" width="180" height="40" rx="8" fill="#F1ECE0" stroke="#547808" strokeWidth="2" />
+                <text x="590" y="25" textAnchor="middle" dominantBaseline="middle" fill="#152025" fontSize="13" fontWeight="500">Finance workflow</text>
                 
-                <rect x="500" y="50" width="180" height="40" rx="8" fill="#F1ECE0" stroke="#315A4D" strokeWidth="2" />
-                <text x="590" y="70" textAnchor="middle" dominantBaseline="middle" fill="#102C27" fontSize="13" fontWeight="500">External evidence service</text>
+                <rect x="500" y="50" width="180" height="40" rx="8" fill="#F1ECE0" stroke="#547808" strokeWidth="2" />
+                <text x="590" y="70" textAnchor="middle" dominantBaseline="middle" fill="#152025" fontSize="13" fontWeight="500">External evidence service</text>
                 
-                <path d="M 500 -20 L 460 -20 L 460 25" stroke="#315A4D" strokeWidth="2" fill="none" />
-                <path d="M 500 70 L 460 70 L 460 25" stroke="#315A4D" strokeWidth="2" fill="none" />
+                <path d="M 500 -20 L 460 -20 L 460 25" stroke="#547808" strokeWidth="2" fill="none" />
+                <path d="M 500 70 L 460 70 L 460 25" stroke="#547808" strokeWidth="2" fill="none" />
               </g>
               <defs>
                 <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-                  <path d="M 0 0 L 10 5 L 0 10 z" fill="#315A4D" />
+                  <path d="M 0 0 L 10 5 L 0 10 z" fill="#547808" />
                 </marker>
               </defs>
             </svg>
@@ -682,8 +682,8 @@ export default function Home() {
         >
           <div className="p-10 md:p-16 grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-[#B96542] text-sm font-semibold tracking-widest uppercase mb-4 block">Selected pilot program</span>
-              <h2 className="font-serif text-4xl md:text-5xl text-[#102C27] leading-[1.1] mb-8 tracking-tight">
+              <span className="text-[#A9F00F] text-sm font-semibold tracking-widest uppercase mb-4 block">Selected pilot program</span>
+              <h2 className="font-serif text-4xl md:text-5xl text-[#152025] leading-[1.1] mb-8 tracking-tight">
                 Test the evidence workflow on 5–10 live grants
               </h2>
               <ul className="space-y-3 mb-8">
@@ -703,13 +703,13 @@ export default function Home() {
             <div className="flex flex-col items-start bg-white p-8 rounded-[16px] border border-[#E8E2D2] shadow-sm">
               <Link 
                 href="/design-partners" 
-                className="w-full inline-flex items-center justify-center rounded-[10px] bg-[#102C27] px-8 py-4 text-lg font-medium text-[#F8F5ED] hover:bg-[#173E36] transition-colors mb-4"
+                className="w-full inline-flex items-center justify-center rounded-[10px] bg-[#152025] px-8 py-4 text-lg font-medium text-[#F8F5ED] hover:bg-[#111A23] transition-colors mb-4"
               >
                 Apply for a design-partner pilot
               </Link>
               <Link 
                 href="/contact" 
-                className="w-full inline-flex items-center justify-center rounded-[10px] bg-transparent border-2 border-[#102C27] px-8 py-4 text-lg font-medium text-[#102C27] hover:bg-[#F8F5ED] transition-colors mb-6"
+                className="w-full inline-flex items-center justify-center rounded-[10px] bg-transparent border-2 border-[#152025] px-8 py-4 text-lg font-medium text-[#152025] hover:bg-[#F8F5ED] transition-colors mb-6"
               >
                 Discuss pilot fit
               </Link>
@@ -727,7 +727,7 @@ export default function Home() {
           className="max-w-3xl mx-auto"
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
         >
-          <h2 className="font-serif text-4xl md:text-5xl text-[#102C27] mb-12 text-center tracking-tight">Common questions</h2>
+          <h2 className="font-serif text-4xl md:text-5xl text-[#152025] mb-12 text-center tracking-tight">Common questions</h2>
           
           <Accordion.Root type="single" collapsible className="w-full space-y-4">
             {[
@@ -741,7 +741,7 @@ export default function Home() {
             ].map((faq, i) => (
               <Accordion.Item key={i} value={`item-${i}`} className="bg-white border border-[#E8E2D2] rounded-[10px] overflow-hidden">
                 <Accordion.Header className="flex">
-                  <Accordion.Trigger className="flex flex-1 items-center justify-between py-5 px-6 font-medium text-[#102C27] text-left hover:bg-[#F8F5ED]/50 transition-colors group">
+                  <Accordion.Trigger className="flex flex-1 items-center justify-between py-5 px-6 font-medium text-[#152025] text-left hover:bg-[#F8F5ED]/50 transition-colors group">
                     {faq.q}
                     <ChevronDown className="w-5 h-5 text-[#5E6964] transition-transform duration-300 group-data-[state=open]:rotate-180" />
                   </Accordion.Trigger>
@@ -758,12 +758,12 @@ export default function Home() {
       </section>
 
       {/* 18. Final CTA */}
-      <section className="bg-[#102C27] text-[#F8F5ED] py-24 md:py-32 px-6 text-center">
+      <section className="bg-[#152025] text-[#F8F5ED] py-24 md:py-32 px-6 text-center">
         <motion.div 
           className="max-w-3xl mx-auto"
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
         >
-          <span className="text-[#B96542] text-sm font-semibold tracking-widest uppercase mb-4 block">Bring one real milestone</span>
+          <span className="text-[#A9F00F] text-sm font-semibold tracking-widest uppercase mb-4 block">Bring one real milestone</span>
           <h2 className="font-serif text-4xl md:text-[56px] leading-[1.1] tracking-tight mb-8">
             See where evidence and decision-making become disconnected
           </h2>
@@ -774,13 +774,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10">
             <Link 
               href="/design-partners" 
-              className="inline-flex items-center justify-center rounded-[10px] bg-[#F8F5ED] px-8 py-4 text-lg font-medium text-[#102C27] hover:bg-white transition-colors"
+              className="inline-flex items-center justify-center rounded-[10px] bg-[#F8F5ED] px-8 py-4 text-lg font-medium text-[#152025] hover:bg-white transition-colors"
             >
               Apply for a pilot
             </Link>
             <Link 
               href="/contact" 
-              className="inline-flex items-center justify-center rounded-[10px] bg-transparent border-2 border-[#315A4D] px-8 py-4 text-lg font-medium text-[#F8F5ED] hover:bg-[#173E36] transition-colors"
+              className="inline-flex items-center justify-center rounded-[10px] bg-transparent border-2 border-[#547808] px-8 py-4 text-lg font-medium text-[#F8F5ED] hover:bg-[#111A23] transition-colors"
             >
               Contact the team
             </Link>

@@ -72,14 +72,14 @@ export default function DesignPartners() {
   return (
     <div className="w-full pb-24">
       {/* Hero */}
-      <section className="bg-[#102C27] text-[#F8F5ED] pt-24 pb-32 px-6">
+      <section className="bg-[#152025] text-[#F8F5ED] pt-24 pb-32 px-6">
         <motion.div 
           className="max-w-4xl mx-auto text-center"
           initial="hidden"
           animate="visible"
           variants={fadeUp}
         >
-          <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#B96542] mb-6">
+          <span className="inline-block text-sm font-semibold tracking-widest uppercase text-[#A9F00F] mb-6">
             Selected pilot program
           </span>
           <h1 className="font-serif text-5xl md:text-7xl leading-[1.1] mb-8 tracking-tight">
@@ -90,7 +90,7 @@ export default function DesignPartners() {
           </p>
           <a 
             href="#application-form" 
-            className="inline-flex items-center justify-center rounded-[10px] bg-[#F8F5ED] px-8 py-4 text-lg font-medium text-[#102C27] hover:bg-white transition-colors"
+            className="inline-flex items-center justify-center rounded-[10px] bg-[#F8F5ED] px-8 py-4 text-lg font-medium text-[#152025] hover:bg-white transition-colors"
             data-testid="button-apply-scroll"
           >
             Apply below ↓
@@ -108,7 +108,7 @@ export default function DesignPartners() {
           variants={fadeUp}
         >
           <div>
-            <h2 className="font-serif text-3xl text-[#102C27] mb-8">Who should apply</h2>
+            <h2 className="font-serif text-3xl text-[#152025] mb-8">Who should apply</h2>
             <ul className="space-y-4">
               {[
                 "Has live climate or nature grants",
@@ -127,7 +127,7 @@ export default function DesignPartners() {
             </ul>
           </div>
           <div>
-            <h2 className="font-serif text-3xl text-[#102C27] mb-8">Who should not apply</h2>
+            <h2 className="font-serif text-3xl text-[#152025] mb-8">Who should not apply</h2>
             <ul className="space-y-4">
               {[
                 "Organizations without active grant portfolios",
@@ -154,14 +154,14 @@ export default function DesignPartners() {
           variants={fadeUp}
         >
           <div>
-            <h2 className="font-serif text-3xl text-[#102C27] mb-8">What participants receive</h2>
+            <h2 className="font-serif text-3xl text-[#152025] mb-8">What participants receive</h2>
             <div className="grid grid-cols-2 gap-x-6 gap-y-4">
               {[
                 "Structured diagnostic", "Pilot configuration", "Implementation support", 
                 "Documented findings", "Influence over early product design", "Agreed confidentiality"
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#315A4D]"></div>
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#547808]"></div>
                   <span className="text-[#5E6964] text-sm md:text-base">{item}</span>
                 </div>
               ))}
@@ -169,7 +169,7 @@ export default function DesignPartners() {
           </div>
           
           <div className="bg-[#F1ECE0] p-8 rounded-[12px] border border-[#E8E2D2]">
-            <h2 className="font-serif text-2xl text-[#102C27] mb-6">Pilot scope</h2>
+            <h2 className="font-serif text-2xl text-[#152025] mb-6">Pilot scope</h2>
             <ul className="space-y-4 text-[#19211E] font-medium">
               <li>• 5–10 active grants</li>
               <li>• One program or portfolio</li>
@@ -190,7 +190,7 @@ export default function DesignPartners() {
           variants={fadeUp}
         >
           <div className="mb-10 text-center">
-            <h2 className="font-serif text-3xl md:text-4xl text-[#102C27] mb-4">Pilot Application</h2>
+            <h2 className="font-serif text-3xl md:text-4xl text-[#152025] mb-4">Pilot Application</h2>
             <p className="text-[#5E6964]">We will assess whether your portfolio, timing, and data requirements fit the current pilot scope.</p>
           </div>
 
@@ -199,7 +199,7 @@ export default function DesignPartners() {
               <div className="w-16 h-16 bg-[#4F7D5B]/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle2 className="w-8 h-8 text-[#4F7D5B]" />
               </div>
-              <h3 className="text-2xl font-serif text-[#102C27] mb-4">Thank you for applying.</h3>
+              <h3 className="text-2xl font-serif text-[#152025] mb-4">Thank you for applying.</h3>
               <p className="text-[#5E6964] leading-relaxed">
                 We will assess whether your portfolio, timing, decision process, and data requirements fit the current pilot scope. A submission does not create a partnership, guarantee acceptance, or commit either party to a contract.
               </p>
@@ -216,30 +216,30 @@ export default function DesignPartners() {
 
               {/* Applicant Details */}
               <div className="space-y-6">
-                <h3 className="text-lg font-serif font-medium text-[#102C27] border-b border-[#E8E2D2] pb-2">Applicant Details</h3>
+                <h3 className="text-lg font-serif font-medium text-[#152025] border-b border-[#E8E2D2] pb-2">Applicant Details</h3>
                 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-[#19211E]">Full Name <span className="text-[#B96542]">*</span></label>
-                    <input {...register("fullName")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]" />
+                    <label className="text-sm font-medium text-[#19211E]">Full Name <span className="text-[#A9F00F]">*</span></label>
+                    <input {...register("fullName")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]" />
                     {errors.fullName && <p className="text-[#A95749] text-xs">{errors.fullName.message}</p>}
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-[#19211E]">Work Email <span className="text-[#B96542]">*</span></label>
-                    <input type="email" {...register("workEmail")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]" />
+                    <label className="text-sm font-medium text-[#19211E]">Work Email <span className="text-[#A9F00F]">*</span></label>
+                    <input type="email" {...register("workEmail")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]" />
                     {errors.workEmail && <p className="text-[#A95749] text-xs">{errors.workEmail.message}</p>}
                   </div>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-[#19211E]">Role / Title <span className="text-[#B96542]">*</span></label>
-                    <input {...register("role")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]" />
+                    <label className="text-sm font-medium text-[#19211E]">Role / Title <span className="text-[#A9F00F]">*</span></label>
+                    <input {...register("role")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]" />
                     {errors.role && <p className="text-[#A95749] text-xs">{errors.role.message}</p>}
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-[#19211E]">LinkedIn Profile <span className="text-[#5E6964] font-normal">(Optional)</span></label>
-                    <input {...register("linkedinProfile")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]" />
+                    <input {...register("linkedinProfile")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]" />
                     {errors.linkedinProfile && <p className="text-[#A95749] text-xs">{errors.linkedinProfile.message}</p>}
                   </div>
                 </div>
@@ -247,24 +247,24 @@ export default function DesignPartners() {
 
               {/* Organization Details */}
               <div className="space-y-6">
-                <h3 className="text-lg font-serif font-medium text-[#102C27] border-b border-[#E8E2D2] pb-2">Organization Details</h3>
+                <h3 className="text-lg font-serif font-medium text-[#152025] border-b border-[#E8E2D2] pb-2">Organization Details</h3>
                 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-[#19211E]">Organization Name <span className="text-[#B96542]">*</span></label>
-                    <input {...register("organization")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]" />
+                    <label className="text-sm font-medium text-[#19211E]">Organization Name <span className="text-[#A9F00F]">*</span></label>
+                    <input {...register("organization")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]" />
                     {errors.organization && <p className="text-[#A95749] text-xs">{errors.organization.message}</p>}
                   </div>
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-[#19211E]">Website <span className="text-[#5E6964] font-normal">(Optional)</span></label>
-                    <input {...register("organizationWebsite")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]" />
+                    <input {...register("organizationWebsite")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]" />
                     {errors.organizationWebsite && <p className="text-[#A95749] text-xs">{errors.organizationWebsite.message}</p>}
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-[#19211E]">Organization Type <span className="text-[#B96542]">*</span></label>
-                  <select {...register("organizationType")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]">
+                  <label className="text-sm font-medium text-[#19211E]">Organization Type <span className="text-[#A9F00F]">*</span></label>
+                  <select {...register("organizationType")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]">
                     <option value="">Select type...</option>
                     <option value="Private foundation">Private foundation</option>
                     <option value="Corporate foundation">Corporate foundation</option>
@@ -280,33 +280,33 @@ export default function DesignPartners() {
                 
                 {watchOrgType === "Other" && (
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-[#19211E]">Please specify <span className="text-[#B96542]">*</span></label>
-                    <input {...register("organizationTypeOther")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]" />
+                    <label className="text-sm font-medium text-[#19211E]">Please specify <span className="text-[#A9F00F]">*</span></label>
+                    <input {...register("organizationTypeOther")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]" />
                   </div>
                 )}
               </div>
 
               {/* Portfolio Scope */}
               <div className="space-y-6">
-                <h3 className="text-lg font-serif font-medium text-[#102C27] border-b border-[#E8E2D2] pb-2">Portfolio Scope</h3>
+                <h3 className="text-lg font-serif font-medium text-[#152025] border-b border-[#E8E2D2] pb-2">Portfolio Scope</h3>
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-[#19211E]">Primary HQ Geography <span className="text-[#B96542]">*</span></label>
-                    <input {...register("primaryGeography")} placeholder="e.g. Germany" className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]" />
+                    <label className="text-sm font-medium text-[#19211E]">Primary HQ Geography <span className="text-[#A9F00F]">*</span></label>
+                    <input {...register("primaryGeography")} placeholder="e.g. Germany" className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]" />
                     {errors.primaryGeography && <p className="text-[#A95749] text-xs">{errors.primaryGeography.message}</p>}
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-[#19211E]">Project Geographies <span className="text-[#B96542]">*</span></label>
-                    <input {...register("projectGeographies")} placeholder="e.g. Sub-Saharan Africa, LatAm" className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]" />
+                    <label className="text-sm font-medium text-[#19211E]">Project Geographies <span className="text-[#A9F00F]">*</span></label>
+                    <input {...register("projectGeographies")} placeholder="e.g. Sub-Saharan Africa, LatAm" className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]" />
                     {errors.projectGeographies && <p className="text-[#A95749] text-xs">{errors.projectGeographies.message}</p>}
                   </div>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-[#19211E]">Annual Grant Budget <span className="text-[#B96542]">*</span></label>
-                    <select {...register("annualGrantBudget")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]">
+                    <label className="text-sm font-medium text-[#19211E]">Annual Grant Budget <span className="text-[#A9F00F]">*</span></label>
+                    <select {...register("annualGrantBudget")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]">
                       <option value="">Select budget...</option>
                       <option value="Under €500K">Under €500K</option>
                       <option value="€500K–€1M">€500K–€1M</option>
@@ -318,8 +318,8 @@ export default function DesignPartners() {
                     {errors.annualGrantBudget && <p className="text-[#A95749] text-xs">{errors.annualGrantBudget.message}</p>}
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-[#19211E]">Active Grant Count <span className="text-[#B96542]">*</span></label>
-                    <select {...register("activeGrantCount")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]">
+                    <label className="text-sm font-medium text-[#19211E]">Active Grant Count <span className="text-[#A9F00F]">*</span></label>
+                    <select {...register("activeGrantCount")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]">
                       <option value="">Select count...</option>
                       <option value="1–4">1–4</option>
                       <option value="5–10">5–10</option>
@@ -335,36 +335,36 @@ export default function DesignPartners() {
 
               {/* Workflow Details */}
               <div className="space-y-6">
-                <h3 className="text-lg font-serif font-medium text-[#102C27] border-b border-[#E8E2D2] pb-2">Workflow & Need</h3>
+                <h3 className="text-lg font-serif font-medium text-[#152025] border-b border-[#E8E2D2] pb-2">Workflow & Need</h3>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-[#19211E]">Current Workflow <span className="text-[#B96542]">*</span></label>
+                  <label className="text-sm font-medium text-[#19211E]">Current Workflow <span className="text-[#A9F00F]">*</span></label>
                   <p className="text-xs text-[#5E6964] mb-1">How do you currently connect milestone reports to funding decisions?</p>
-                  <textarea {...register("currentWorkflow")} rows={3} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-3 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]"></textarea>
+                  <textarea {...register("currentWorkflow")} rows={3} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-3 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]"></textarea>
                   {errors.currentWorkflow && <p className="text-[#A95749] text-xs">{errors.currentWorkflow.message}</p>}
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-[#19211E]">Core Evidence Problem <span className="text-[#B96542]">*</span></label>
+                  <label className="text-sm font-medium text-[#19211E]">Core Evidence Problem <span className="text-[#A9F00F]">*</span></label>
                   <p className="text-xs text-[#5E6964] mb-1">What friction point made you seek this out?</p>
-                  <textarea {...register("evidenceProblem")} rows={3} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-3 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]"></textarea>
+                  <textarea {...register("evidenceProblem")} rows={3} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-3 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]"></textarea>
                   {errors.evidenceProblem && <p className="text-[#A95749] text-xs">{errors.evidenceProblem.message}</p>}
                 </div>
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-[#19211E]">Existing Tools <span className="text-[#5E6964] font-normal">(Optional)</span></label>
                   <p className="text-xs text-[#5E6964] mb-1">What grant-management or reporting tools do you already use?</p>
-                  <input {...register("existingTools")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]" />
+                  <input {...register("existingTools")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]" />
                 </div>
               </div>
 
               {/* Logistics */}
               <div className="space-y-6">
-                <h3 className="text-lg font-serif font-medium text-[#102C27] border-b border-[#E8E2D2] pb-2">Logistics</h3>
+                <h3 className="text-lg font-serif font-medium text-[#152025] border-b border-[#E8E2D2] pb-2">Logistics</h3>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-[#19211E]">Pilot Budget Readiness <span className="text-[#B96542]">*</span></label>
-                  <select {...register("budgetReadiness")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]">
+                  <label className="text-sm font-medium text-[#19211E]">Pilot Budget Readiness <span className="text-[#A9F00F]">*</span></label>
+                  <select {...register("budgetReadiness")} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-2.5 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]">
                     <option value="">Select readiness...</option>
                     <option value="We have an approved pilot budget">We have an approved pilot budget</option>
                     <option value="We can seek approval for a defined pilot">We can seek approval for a defined pilot</option>
@@ -376,17 +376,17 @@ export default function DesignPartners() {
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-[#19211E]">Additional Context <span className="text-[#5E6964] font-normal">(Optional)</span></label>
-                  <textarea {...register("additionalContext")} rows={3} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-3 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#315A4D]"></textarea>
+                  <textarea {...register("additionalContext")} rows={3} className="w-full bg-white border border-[#E8E2D2] rounded-[8px] px-4 py-3 text-[#19211E] focus:outline-none focus:ring-2 focus:ring-[#547808]"></textarea>
                 </div>
               </div>
 
               <div className="space-y-4 pt-4 border-t border-[#E8E2D2]">
                 <label className="flex items-start gap-3 cursor-pointer group">
                   <div className="relative flex items-center pt-0.5">
-                    <input type="checkbox" {...register("privacyConsent")} className="w-5 h-5 rounded-[4px] border-[#E8E2D2] text-[#315A4D] focus:ring-[#315A4D] bg-white cursor-pointer" />
+                    <input type="checkbox" {...register("privacyConsent")} className="w-5 h-5 rounded-[4px] border-[#E8E2D2] text-[#547808] focus:ring-[#547808] bg-white cursor-pointer" />
                   </div>
                   <span className="text-sm text-[#5E6964] leading-relaxed">
-                    By submitting this form, you authorize EcoArbitrage to use the information to evaluate your inquiry, contact you about the proposed pilot, and manage the resulting business relationship. Do not include sensitive personal or project information. See the Privacy Notice. <span className="text-[#B96542]">*</span>
+                    By submitting this form, you authorize EcoArbitrage to use the information to evaluate your inquiry, contact you about the proposed pilot, and manage the resulting business relationship. Do not include sensitive personal or project information. See the Privacy Notice. <span className="text-[#A9F00F]">*</span>
                   </span>
                 </label>
                 {errors.privacyConsent && <p className="text-[#A95749] text-xs">{errors.privacyConsent.message}</p>}
@@ -395,7 +395,7 @@ export default function DesignPartners() {
               <button 
                 type="submit"
                 disabled={status === 'loading'}
-                className="w-full mt-4 inline-flex items-center justify-center rounded-[10px] bg-[#102C27] px-8 py-4 text-lg font-medium text-[#F8F5ED] hover:bg-[#173E36] transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
+                className="w-full mt-4 inline-flex items-center justify-center rounded-[10px] bg-[#152025] px-8 py-4 text-lg font-medium text-[#F8F5ED] hover:bg-[#111A23] transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
                 data-testid="button-apply-submit"
               >
                 {status === 'loading' ? 'Submitting application...' : 'Submit application'}
@@ -404,7 +404,7 @@ export default function DesignPartners() {
           )}
 
           <div className="mt-12 pt-8 border-t border-[#E8E2D2]">
-            <h4 className="font-serif text-[#102C27] font-medium mb-3">Expectations</h4>
+            <h4 className="font-serif text-[#152025] font-medium mb-3">Expectations</h4>
             <ul className="grid sm:grid-cols-2 gap-x-4 gap-y-2 text-xs text-[#5E6964] list-disc pl-4">
               <li>Pilot results may identify that the approach is not suitable.</li>
               <li>Not every claim can be verified.</li>

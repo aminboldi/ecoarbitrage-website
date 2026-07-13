@@ -7,11 +7,11 @@ export default function Privacy() {
     <div className="bg-[#F8F5ED] min-h-screen py-20 px-6">
       <div className="max-w-[720px] mx-auto">
         <header className="mb-12">
-          <h1 className="font-serif text-4xl md:text-5xl font-medium text-[#102C27] mb-4 tracking-tight">Privacy Notice</h1>
+          <h1 className="font-serif text-4xl md:text-5xl font-medium text-[#152025] mb-4 tracking-tight">Privacy Notice</h1>
           <p className="text-[#5E6964]">Last updated: [Date to be confirmed]</p>
         </header>
 
-        <div className="prose prose-lg prose-headings:font-serif prose-headings:font-medium prose-headings:text-[#102C27] prose-p:text-[#19211E] prose-p:leading-relaxed prose-a:text-[#315A4D] hover:prose-a:text-[#102C27] max-w-none">
+        <div className="prose prose-lg prose-headings:font-serif prose-headings:font-medium prose-headings:text-[#152025] prose-p:text-[#19211E] prose-p:leading-relaxed prose-a:text-[#547808] hover:prose-a:text-[#152025] max-w-none">
           <h2>What information we collect</h2>
           <p>
             Name, work email, company/organization name, role, inquiry type, message content, and optional fields submitted through our contact and application forms. UTM parameters and referrer information for understanding how visitors find us. Technical information necessary to serve the website (standard server logs).
